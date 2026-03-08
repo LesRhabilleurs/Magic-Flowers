@@ -70,7 +70,8 @@ a {
   top: 40px; /* sous le bouton */
   right: 0;
   width: 300px;
-  background-color: #1c1c1c;
+  background-color: #ffffff;
+  color: #111;
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 0 10px #2ecc71aa;
