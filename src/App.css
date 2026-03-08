@@ -29,8 +29,15 @@ a {
 }
 
 .logo {
-  height: 60px;
+  height: 80px;          /* augmente la hauteur du logo */
+  width: auto;           /* conserve les proportions */
   object-fit: contain;
+  margin-right: 20px;    /* espace entre le logo et les liens */
+  transition: transform 0.2s;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* petit effet zoom au survol */
 }
 
 .nav-links a {
