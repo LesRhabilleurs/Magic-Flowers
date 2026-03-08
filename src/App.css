@@ -51,18 +51,19 @@ a {
 }
 
 .cart-container button {
-  background: #ffffff;
+  background: #ffffff;       /* bouton blanc */
   border: none;
-  padding: 0.5rem 0.8rem;
-  border-radius: 5px;
+  padding: 0.8rem 1.2rem;    /* plus grand que ton précédent 0.5/0.8 */
+  border-radius: 8px;         /* arrondi plus visible */
   cursor: pointer;
   font-weight: bold;
-  color: #111;
+  color: #111;               /* texte noir */
+  font-size: 1.2rem;         /* texte plus gros */
   transition: background 0.2s;
 }
 
 .cart-container button:hover {
-  background: #27ae60;
+  background: #f0f0f0;
 }
 
 .cart-dropdown {
