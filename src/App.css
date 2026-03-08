@@ -30,7 +30,7 @@ a {
 
 .logo {
   height: 80px;          /* moins haut que 120px */
-  width: 200px;          /* plus large */
+  width: 400px;          /* plus large */
   object-fit: contain;   /* garde les proportions correctes */
   margin-right: 25px;    /* espace avec les liens */
   transition: transform 0.2s;
