@@ -29,10 +29,10 @@ a {
 }
 
 .logo {
-  height: 80px;          /* augmente la hauteur du logo */
+  height: 120px;          /* augmente la hauteur du logo */
   width: auto;           /* conserve les proportions */
   object-fit: contain;
-  margin-right: 20px;    /* espace entre le logo et les liens */
+  margin-right: 25px;    /* espace entre le logo et les liens */
   transition: transform 0.2s;
 }
 
