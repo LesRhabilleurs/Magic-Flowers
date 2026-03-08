@@ -30,9 +30,9 @@ a {
 
 .logo {
   height: 120px;          /* logo beaucoup plus grand */
-  width: auto;            /* conserve les proportions */
+  width: 200;            /* conserve les proportions */
   object-fit: contain;
-  margin-right: 25px;     /* espace avec les liens */
+  margin-right: 20px;     /* espace avec les liens */
   transition: transform 0.2s;
 }
 
