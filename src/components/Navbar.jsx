@@ -13,6 +13,7 @@ export default function Navbar({ cart, setCart }) {
         <Link to="/">Accueil</Link>
         <Link to="/shop">Boutique</Link>
         <Link to="/">Accesoires</Link>
+        <Link to="/">FAQ</Link>
       </div>
 
       <Cart cart={cart} setCart={setCart} />
