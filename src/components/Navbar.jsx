@@ -12,6 +12,7 @@ export default function Navbar({ cart, setCart }) {
       <div className="nav-links">
         <Link to="/">Accueil</Link>
         <Link to="/shop">Boutique</Link>
+        <Link to="/">Accesoires</Link>
       </div>
 
       <Cart cart={cart} setCart={setCart} />
