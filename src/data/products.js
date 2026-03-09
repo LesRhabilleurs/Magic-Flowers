@@ -17,8 +17,8 @@ const products = [
     id: 3,
     name: "Fleur CBD High Society (citriques)",
     price: 19.90,
-    description: "Fleurs de CBD suisse de qualité supérieure",
-    image: "/fleur3.jpg"
+    description: "Fleurs de CBD suisse de qualité supérieure au gout citronné",
+    image: "/fleur3.jpeg"
   }
 ]
 
