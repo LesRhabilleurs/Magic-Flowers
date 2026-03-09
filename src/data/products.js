@@ -1,9 +1,9 @@
 const products = [
   {
     id: 1,
-    name: "Fleur CBD High Society (fruits de bois)",
+    name: "Fleur CBD High Society (10G)",
     price: 69.90,
-    description: "Fleurs de CBD suisse de qualité supérieure",
+    description: "Fleurs de CBD suisse de qualité supérieure au gout Bonbon",
     image: "/images/fleur1.jpg"
   },
   {
