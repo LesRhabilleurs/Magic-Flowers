@@ -40,17 +40,19 @@ a {
   transform: scale(1.05); /* petit effet zoom au survol */
 }
 
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .nav-links a {
-  margin-left: 20px;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.2s;
-  flex: 1;                 /* prend l'espace au centre */
-  display: flex;
-  justify-content: center; /* centre Accueil et Boutique */
-  gap: 30px;
-  flex-direction: row;
+
 }
 
 .nav-links a:hover {
