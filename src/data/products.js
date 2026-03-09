@@ -11,7 +11,7 @@ const products = [
     name: "Fleur CBD High Society (10G)",
     price: 69.90.-,
     description: "Fleurs de CBD suisse de qualité supérieure au gout épicé",
-    image: "/fleur2.jpg"
+    image: "/fleur2.jpeg"
   },
   {
     id: 3,
