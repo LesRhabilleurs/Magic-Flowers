@@ -10,7 +10,7 @@ export default function Shop() {
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <p>{product.price} CHF</p>
+            <p>{product.price}</p>
             <button>Ajouter au panier</button>
           </div>
         ))}
