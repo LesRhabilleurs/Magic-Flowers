@@ -1,23 +1,23 @@
 const products = [
   {
     id: 1,
-    name: "Fleur CBD Premium",
-    price: 12.99,
-    description: "Fleur CBD suisse de qualité supérieure",
+    name: "Fleur CBD High Society (fruits de bois)",
+    price: 69.90,
+    description: "Fleurs de CBD suisse de qualité supérieure",
     image: "/images/fleur1.jpg"
   },
   {
     id: 2,
-    name: "Fleur CBD Relax",
-    price: 9.99,
-    description: "Pour se détendre après une longue journée",
+    name: "Fleur CBD High Society (épices)",
+    price: 19.90,
+    description: "Fleurs de CBD suisse de qualité supérieure",
     image: "/images/fleur2.jpg"
   },
   {
     id: 3,
-    name: "Fleur CBD Énergie",
-    price: 11.49,
-    description: "Pour un boost naturel et léger",
+    name: "Fleur CBD High Society (citriques)",
+    price: 19.90,
+    description: "Fleurs de CBD suisse de qualité supérieure",
     image: "/images/fleur3.jpg"
   }
 ]
