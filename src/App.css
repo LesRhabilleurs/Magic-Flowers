@@ -46,6 +46,10 @@ a {
   font-weight: bold;
   text-decoration: none;
   transition: color 0.2s;
+  flex: 1;                 /* prend l'espace au centre */
+  display: flex;
+  justify-content: center; /* centre Accueil et Boutique */
+  gap: 30px;
 }
 
 .nav-links a:hover {
