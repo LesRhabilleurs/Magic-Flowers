@@ -13,7 +13,6 @@ export default function Navbar({ cart, setCart }) {
       <Link to="/" className="logo-link">
         <div className="logo-container">
           <img src={logo} alt="Magic Flowers" className="logo" />
-          <span className="site-name">Magic Flowers</span>
         </div>
       </Link>
 
