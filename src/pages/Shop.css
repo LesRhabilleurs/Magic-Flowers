@@ -1,39 +1,41 @@
-/* Container global de la page Shop */
+/* Container de la page Shop */
 .shop {
   max-width: 1200px;
   margin: auto;
   padding: 50px 20px;
 }
 
-/* Titre centré premium */
+/* Titre centré */
 .shop-title {
-  text-align: center;           /* centre horizontalement */
-  font-family: 'Montserrat', sans-serif; /* police premium */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  color: #b87333;               /* cuivre premium */
-  margin-bottom: 50px;          /* espace entre le titre et la grille */
+  color: #b87333; /* couleur cuivre premium */
+  margin-bottom: 50px;
 }
 
-/* Grille produits héritée du style global */
+/* Grille responsive */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   justify-items: center;
+  align-items: start;
+  width: 100%;
 }
 
-/* Cartes produits héritées du style global pour le luxe */
+/* Cartes produits premium */
 .product {
+  width: 100%;
+  max-width: 280px;
   background: var(--bg-card);
   border-radius: 18px;
   padding: 2rem;
   text-align: center;
-  width: 100%;
-  max-width: 280px;
   border: 1px solid var(--border-soft);
-  transition: all 0.3s ease;
   box-shadow: 0 6px 15px var(--shadow-light);
+  transition: all 0.3s ease;
 }
 
 .product:hover {
@@ -76,4 +78,15 @@
   background: var(--primary-hover);
   transform: translateY(-2px);
   box-shadow: 0 10px 25px var(--shadow-hover);
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* une carte par ligne sur mobile */
+  }
+
+  .shop-title {
+    font-size: 2rem;
+  }
 }
