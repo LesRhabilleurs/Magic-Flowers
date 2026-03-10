@@ -9,9 +9,12 @@ export default function Navbar({ cart, setCart }) {
 
   return (
     <nav className="navbar">
-      {/* Logo */}
+      {/* Logo + Nom du site */}
       <Link to="/" className="logo-link">
-        <img src={logo} alt="Magic Flowers" className="logo" />
+        <div className="logo-container">
+          <img src={logo} alt="Magic Flowers" className="logo" />
+          <span className="site-name">Magic Flowers</span>
+        </div>
       </Link>
 
       {/* Liens de navigation */}
