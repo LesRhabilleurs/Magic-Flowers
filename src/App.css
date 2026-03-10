@@ -1,70 +1,67 @@
-/* === VARIABLES COULEURS PREMIUM === */
-
+/* === VARIABLES COULEURS PREMIUM LUXE === */
 :root {
-  --bg-dark: #0f0f0f;
-  --bg-soft: #151515;
-  --bg-card: #1a1a1a;
-
-  --primary: #6bd36b;
+  --bg-primary: #fdfcf9;       /* fond général doux et lumineux */
+  --bg-section: #ffffff;       /* sections principales */
+  --bg-card: #fcfcfc;          /* cartes produits */
+  
+  --primary: #6bd36b;          /* vert CBD noble */
   --primary-hover: #4fbf4f;
 
-  --text-main: #f5f5f5;
-  --text-soft: #bdbdbd;
+  --text-main: #111111;        /* texte principal sombre */
+  --text-soft: #555555;        /* texte secondaire élégant */
 
-  --border-soft: #232323;
+  --border-soft: #e5e5e5;      /* bordures douces */
+  --shadow-light: rgba(0,0,0,0.08);
+  --shadow-hover: rgba(0,0,0,0.15);
 }
 
-
-/* === BODY PREMIUM === */
-
+/* === TYPOGRAPHIE PREMIUM === */
 body {
   font-family: 'Poppins', Arial, sans-serif;
-
-  background: linear-gradient(
-    180deg,
-    #0f0f0f 0%,
-    #141414 50%,
-    #0b0b0b 100%
-  );
-
+  font-weight: 400;
   color: var(--text-main);
+  background: var(--bg-primary);
   margin: 0;
+  line-height: 1.6;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0.5em 0;
+}
 
-/* === SECTIONS CENTRÉES === */
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--text-soft);
+}
 
+/* === SECTIONS CENTRÉES PREMIUM === */
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
   padding: 100px 20px;
-
   max-width: 1200px;
   margin: auto;
 }
 
-
-/* === HERO SECTION === */
-
+/* === HERO SECTION PREMIUM === */
 .hero {
   min-height: 80vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+    linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.4)),
     url("/hero-cannabis.jpg");
-
   background-size: cover;
   background-position: center;
-
-  color: white;
+  color: var(--text-main);
 }
 
 .hero h1 {
@@ -89,212 +86,138 @@ section {
   color: var(--text-soft);
 }
 
-
 /* === BOUTONS PREMIUM === */
-
 button {
+  font-family: 'Poppins', sans-serif;
   background: var(--primary);
-
   border: none;
-
   padding: 0.9rem 1.6rem;
-
-  border-radius: 10px;
-
+  border-radius: 12px;
   font-weight: 600;
-
-  color: #111;
-
+  color: #fff;
   cursor: pointer;
-
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px var(--shadow-light);
 }
 
 button:hover {
   background: var(--primary-hover);
-
   transform: translateY(-2px);
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  box-shadow: 0 10px 25px var(--shadow-hover);
 }
 
-
-/* === FEATURES GRID === */
-
+/* === FEATURES GRID PREMIUM === */
 .features-grid {
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-
   gap: 30px;
-
   margin-top: 50px;
 }
 
 .feature {
   background: var(--bg-card);
-
   padding: 35px;
-
-  border-radius: 14px;
-
+  border-radius: 16px;
   border: 1px solid var(--border-soft);
-
   transition: all 0.3s ease;
+  box-shadow: 0 6px 15px var(--shadow-light);
 }
 
 .feature:hover {
-
   transform: translateY(-6px);
-
   border: 1px solid var(--primary);
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 25px var(--shadow-hover);
 }
 
-
-/* === GRILLE PRODUITS === */
-
+/* === GRILLE PRODUITS PREMIUM === */
 .grid {
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-
   gap: 2rem;
-
   margin-top: 3rem;
-
   justify-items: center;
 }
 
-
-/* === CARTES PRODUITS PREMIUM === */
-
+/* === CARTES PRODUITS LUXE === */
 .product {
   background: var(--bg-card);
-
-  border-radius: 16px;
-
-  padding: 1.8rem;
-
+  border-radius: 18px;
+  padding: 2rem;
   text-align: center;
-
   width: 100%;
   max-width: 280px;
-
   border: 1px solid var(--border-soft);
-
   transition: all 0.3s ease;
+  box-shadow: 0 6px 15px var(--shadow-light);
 }
 
 .product:hover {
-
   transform: translateY(-8px);
-
   border: 1px solid var(--primary);
-
-  box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+  box-shadow: 0 12px 30px var(--shadow-hover);
 }
 
 .product img {
   width: 100%;
-
   border-radius: 14px;
-
   margin-bottom: 1rem;
 }
 
 .product h3 {
   color: var(--primary);
-
   margin-bottom: 0.6rem;
 }
 
 .product p {
   color: var(--text-soft);
-
   font-size: 0.95rem;
-
   margin-bottom: 1rem;
 }
 
-
-/* === SECTION ENGAGEMENT === */
-
+/* === SECTION ENGAGEMENT PREMIUM === */
 .transparency {
-
   display: flex;
-
   flex-direction: column;
-
   align-items: flex-start;
-
   text-align: left;
-
   padding: 90px 20px;
-
   max-width: 800px;
-
   margin: auto;
 }
 
 .transparency ul {
   margin-top: 20px;
-
   padding-left: 20px;
-
   color: var(--text-soft);
 }
-
 
 /* === CTA PREMIUM === */
-
 .cta {
-
-  background: linear-gradient(
-    145deg,
-    #171717,
-    #111
-  );
-
-  border-radius: 16px;
-
+  background: linear-gradient(145deg, #f9f9f9, #ffffff);
+  border-radius: 18px;
   padding: 90px 30px;
-
   border: 1px solid var(--border-soft);
+  box-shadow: 0 6px 20px var(--shadow-light);
 }
 
-
 /* === DISCLAIMER === */
-
 .legal {
-
   max-width: 800px;
-
   margin: auto;
-
   padding: 40px 20px;
-
   color: var(--text-soft);
-
   font-size: 0.95rem;
 }
 
-
 /* === RESPONSIVE === */
-
 @media (max-width: 768px) {
-
   .grid {
     grid-template-columns: 1fr;
   }
-
   .features-grid {
     grid-template-columns: 1fr;
   }
-
   .hero h1 {
     font-size: 2.4rem;
   }
-
 }
