@@ -1,7 +1,7 @@
 /* === Styles généraux === */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', Arial, sans-serif; /* police plus premium */
   background-color: #0f0f0f;
   color: #fff;
 }
@@ -29,15 +29,15 @@ a {
 }
 
 .logo {
-  height: 120px;          /* logo beaucoup plus grand */
-  width: 200;            /* conserve les proportions */
+  height: 100px;          /* logo plus harmonieux */
+  width: auto;             /* proportionnel */
   object-fit: contain;
-  margin-right: 20px;     /* espace avec les liens */
-  transition: transform 0.2s;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.05); /* petit effet zoom au survol */
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -49,10 +49,9 @@ a {
 
 .nav-links a {
   color: #fff;
-  font-weight: bold;
-  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
   transition: color 0.2s;
-
 }
 
 .nav-links a:hover {
@@ -61,54 +60,58 @@ a {
 
 /* === Panier déroulant === */
 .cart-container {
-  position: relative; /* pour le dropdown */
+  position: relative;
 }
 
 .cart-container button {
-  background: #ffffff;       /* bouton blanc */
+  background: #ffffff;
   border: none;
-  padding: 0.8rem 1.2rem;    /* plus grand que ton précédent 0.5/0.8 */
-  border-radius: 8px;         /* arrondi plus visible */
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  color: #111;               /* texte noir */
-  font-size: 1.2rem;         /* texte plus gros */
-  transition: background 0.2s;
+  color: #111;
+  font-size: 1.2rem;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .cart-container button:hover {
   background: #f0f0f0;
+  transform: translateY(-2px);
 }
 
 .cart-dropdown {
   position: absolute;
-  top: 40px; /* sous le bouton */
+  top: 50px;
   right: 0;
-  width: 300px;
+  width: 320px;
   background-color: #ffffff;
   color: #111;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px #2ecc71aa;
+  box-shadow: 0 0 15px #2ecc71aa;
   z-index: 1000;
+  text-align: left;
 }
 
 .cart-dropdown h3 {
   margin-top: 0;
   color: #2ecc71;
+  font-size: 1.2rem;
 }
 
 .cart-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
 }
 
 .cart-item button {
   background: #e74c3c;
   border: none;
   border-radius: 5px;
-  padding: 0 0.5rem;
+  padding: 0 0.6rem;
   color: #fff;
   cursor: pointer;
   transition: background 0.2s;
@@ -120,27 +123,30 @@ a {
 
 .checkout-btn {
   width: 100%;
-  padding: 0.8rem;
-  margin-top: 1rem;
+  padding: 0.9rem;
+  margin-top: 1.2rem;
   background-color: #2ecc71;
   border: none;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
   color: #111;
-  transition: background-color 0.2s;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 .checkout-btn:hover {
   background-color: #27ae60;
+  transform: translateY(-2px);
 }
 
 /* === Grille de produits === */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  justify-items: center;
 }
 
 /* === Cartes produits === */
@@ -149,44 +155,60 @@ a {
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 280px;
 }
 
 .product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px #2ecc71aa;
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #2ecc71aa;
 }
 
 .product img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 1rem;
 }
 
 .product h3 {
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
   color: #2ecc71;
+  font-size: 1.2rem;
 }
 
 .product p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #ccc;
 }
 
 .product button {
   margin-top: 1rem;
-  padding: 0.8rem 1.2rem;
+  padding: 0.9rem 1.5rem;
   background-color: #2ecc71;
   border: none;
   border-radius: 8px;
   color: #111;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 .product button:hover {
   background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+/* === Sections centering === */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* === Responsive === */
@@ -194,6 +216,7 @@ a {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
   }
 
   .grid {
