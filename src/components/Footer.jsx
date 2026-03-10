@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Logo + description */}
         <div className="footer-brand">
           <h2 className="footer-logo">
-            <FaLeaf /> Magic Flowers
+             Magic Flowers
           </h2>
           <p>
             CBD premium sélectionné avec soin. Produits naturels,
