@@ -1,0 +1,8 @@
+.shop-title {
+  text-align: center;      /* centre le texte horizontalement */
+  font-family: 'Montserrat', sans-serif; /* police premium */
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text-main); /* ou une couleur de ton thème */
+  margin: 40px 0;           /* espace au-dessus et en dessous */
+}
