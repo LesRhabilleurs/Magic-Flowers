@@ -15,7 +15,7 @@ export default function Footer() {
           </h2>
           <p>
             CBD premium sélectionné avec soin. Produits naturels,
-            légaux en Europe et testés en laboratoire.
+            légaux en Suisse et testés en laboratoire.
           </p>
 
           <div className="footer-social">
