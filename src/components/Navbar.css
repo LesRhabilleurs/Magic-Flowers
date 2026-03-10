@@ -39,6 +39,11 @@
   text-decoration: none;
 }
 
+/* Supprime le soulignement sur le lien */
+.logo-link {
+  text-decoration: none; /* supprime underline sur le Link */
+}
+
 /* Ajuste le logo pour être à la même hauteur que le texte */
 .logo-container .logo {
   height: 50px; /* ajuster selon la taille souhaitée */
