@@ -1,33 +1,112 @@
-import { Link } from "react-router-dom";
-import Cart from "./Cart";
-import logo from "../assets/logo.png";
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  border-bottom: 2px solid #2ecc71;
+  position: relative;
+  z-index: 100;
+}
 
-export default function Navbar({ cart, setCart }) {
-  return (
-    <nav className="navbar">
-      
-      {/* Logo */}
-      <Link to="/" className="logo-link">
-        <img src={logo} alt="Magic Flowers" className="logo" />
-      </Link>
+/* Logo */
+.logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
 
-      {/* Liens de navigation */}
-      <div className="nav-links">
-        <Link to="/">Accueil</Link>
-        <Link to="/shop">Boutique</Link>
-        <Link to="/accessoires">Accessoires</Link>
-        <Link to="/faq">FAQ</Link>
-      </div>
+.logo:hover {
+  transform: scale(1.05);
+}
 
-      {/* Panier */}
-      <Cart cart={cart} setCart={setCart} />
+/* Liens */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
-      {/* Burger menu pour mobile */}
-      <div className="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  );
+.nav-links a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2ecc71;
+}
+
+/* Panier bouton (Cart.jsx) */
+.cart-container button {
+  background: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #111;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cart-container button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Burger menu */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  width: 25px;
+  height: 3px;
+  background: #2ecc71;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Burger menu ouvert animation */
+.burger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    gap: 20px;
+    display: none;
+    border-left: 2px solid #2ecc71;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
 }
