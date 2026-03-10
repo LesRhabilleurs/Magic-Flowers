@@ -1,4 +1,6 @@
 import { useState } from "react"
+import "./Cart.css"
+
 
 export default function Cart({ cart, setCart }) {
 
