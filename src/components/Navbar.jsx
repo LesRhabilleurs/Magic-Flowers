@@ -20,6 +20,7 @@ export default function Navbar({ cart, setCart }) {
         <Link to="/shop" onClick={() => setMenuOpen(false)}>Boutique</Link>
         <Link to="/accessoires" onClick={() => setMenuOpen(false)}>Accessoires</Link>
         <Link to="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
 
       {/* Panier */}
