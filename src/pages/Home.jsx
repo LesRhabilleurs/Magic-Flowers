@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <p className="hero-info">
-          Culture suisse • Qualité premium • CBD légal (&lt;1% THC)
+          Culture suisse • Qualité exclusive • CBD légal (&lt;1% THC)
         </p>
       </section>
 
@@ -41,7 +41,7 @@ export default function Home() {
         <div className="features-grid">
 
           <div className="feature">
-            <h3>Qualité Premium</h3>
+            <h3>Qualité exclusive</h3>
             <p>
               Nos fleurs sont sélectionnées pour leur richesse aromatique et
               leur apparence exceptionnelle.
