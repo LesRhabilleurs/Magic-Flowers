@@ -29,7 +29,7 @@
 .product {
   width: 100%;
   min-height: 400px;
-  max-width: 280px;
+  max-width: 300px;
   background: var(--bg-card);
   border-radius: 18px;
   padding: 2rem;
