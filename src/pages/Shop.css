@@ -1,21 +1,21 @@
-/* Container de la page Shop */
+/* === Container page Shop === */
 .shop {
   max-width: 1200px;
   margin: auto;
   padding: 50px 20px;
 }
 
-/* Titre centré */
+/* === Titre centré noir et plus haut === */
 .shop-title {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
-  color: #b87333; /* couleur cuivre premium */
+  font-size: 3rem;       /* plus haut */
+  color: #111111;        /* noir */
   margin-bottom: 50px;
 }
 
-/* Grille responsive */
+/* === Grille responsive === */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -25,7 +25,7 @@
   width: 100%;
 }
 
-/* Cartes produits premium */
+/* === Cartes produits premium === */
 .product {
   width: 100%;
   max-width: 280px;
@@ -80,13 +80,13 @@
   box-shadow: 0 10px 25px var(--shadow-hover);
 }
 
-/* Responsive mobile */
+/* === Responsive mobile === */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr; /* une carte par ligne sur mobile */
   }
 
   .shop-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
