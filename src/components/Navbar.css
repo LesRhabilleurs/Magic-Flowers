@@ -33,9 +33,9 @@
 /* Texte à côté du logo */
 .site-name {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.3rem;
-  color: #b1935e; /* ou var(--text-main) si tu veux utiliser les variables premium */
+  color: #b2955d; /* ou var(--text-main) si tu veux utiliser les variables premium */
   text-decoration: none;
 }
 
