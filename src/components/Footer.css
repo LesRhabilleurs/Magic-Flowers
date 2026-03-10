@@ -1,96 +1,100 @@
+/* Footer.css */
+
+/* === FOOTER GLOBAL === */
 .footer {
-  background: #0f0f0f;
-  color: #fff;
-  padding: 60px 20px 30px;
-  font-family: Arial, sans-serif;
+  background: #fdfcf9;
+  color: #111;
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Container des colonnes */
 .footer-container {
+  display: flex;
+  flex-wrap: wrap; /* pour mobile */
+  gap: 40px;
   max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
-  gap: 40px;
 }
 
+/* Chaque colonne prend la même largeur */
+.footer-brand,
+.footer-column {
+  flex: 1;
+  min-width: 200px; /* pour éviter qu’elles soient trop étroites */
+}
+
+/* Logo */
 .footer-logo {
-  color: #6bd36b;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer-brand p {
-  margin-top: 10px;
-  color: #aaa;
-  line-height: 1.6;
-}
-
-.footer-column h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #b87333; /* cuivre premium */
   margin-bottom: 15px;
-  font-size: 16px;
-}
-
-.footer-column a {
-  display: block;
-  color: #aaa;
   text-decoration: none;
-  margin-bottom: 8px;
-  transition: 0.3s;
 }
 
-.footer-column a:hover {
-  color: #6bd36b;
+/* Description */
+.footer-brand p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555555;
 }
 
+/* Réseaux sociaux */
 .footer-social {
-  margin-top: 20px;
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .footer-social a {
-  font-size: 20px;
-  margin-right: 12px;
-  color: #aaa;
-  transition: 0.3s;
+  color: #b87333; /* cuivre premium */
+  font-size: 1.3rem;
+  transition: transform 0.2s, color 0.2s;
+  text-decoration: none;
 }
 
 .footer-social a:hover {
-  color: #6bd36b;
+  color: #a15c2f;
+  transform: scale(1.2);
 }
 
-.newsletter-form {
-  display: flex;
-  margin-top: 10px;
+/* Titres des colonnes */
+.footer-column h4 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #111;
 }
 
-.newsletter-form input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
+/* Liens des colonnes */
+.footer-column a {
+  display: block;
+  color: #555555;
+  text-decoration: none; /* supprime le soulignement */
+  margin-bottom: 8px;
+  transition: color 0.2s;
 }
 
-.newsletter-form button {
-  background: #6bd36b;
-  border: none;
-  padding: 10px 16px;
-  cursor: pointer;
-  font-weight: bold;
+.footer-column a:hover {
+  color: #b87333; /* cuivre premium au hover */
 }
 
-.newsletter-form button:hover {
-  background: #55b955;
-}
-
+/* Bas du footer */
 .footer-bottom {
-  border-top: 1px solid #222;
   margin-top: 40px;
+  border-top: 1px solid #e5e5e5;
   padding-top: 20px;
   text-align: center;
-  color: #777;
+  font-size: 0.9rem;
+  color: #555555;
 }
 
-.footer-note {
-  font-size: 13px;
-  margin-top: 5px;
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
