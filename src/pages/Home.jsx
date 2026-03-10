@@ -16,7 +16,7 @@ export default function Home() {
           <button>Découvrir nos fleurs</button>
         </div>
         <p className="hero-info">
-          Culture 100% suisse • Qualité exclusive • CBD légal (&lt;1% THC)
+          Culture 100% suisse • Qualité exclusive • Produits légaux (&lt;1% THC)
         </p>
       </section>
 
