@@ -11,7 +11,6 @@ export default function Home() {
         <p>Des fleurs CBD cultivées avec passion dans des conditions optimales pour révéler toute la richesse naturelle du cannabis.</p>
         <div className="hero-buttons">
           <button>Découvrir nos fleurs</button>
-          <button>Voir la boutique</button>
         </div>
         <p className="hero-info">Culture suisse • Qualité exclusive • CBD légal (&lt;1% THC)</p>
       </section>
