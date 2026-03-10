@@ -7,16 +7,16 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
-        <h1>Magic Flowers – CBD Exclusif Suisse</h1>
+        <h1>Bienvenue chez Magic Flowers</h1>
         <p>
-          Des fleurs CBD cultivées avec passion dans des conditions optimales
+          Chez nous vous trouverez des fleurs de CBD cultivées avec passion et dans des conditions optimales
           pour révéler toute la richesse naturelle du cannabis.
         </p>
         <div className="hero-buttons">
           <button>Découvrir nos fleurs</button>
         </div>
         <p className="hero-info">
-          Culture suisse • Qualité exclusive • CBD légal (&lt;1% THC)
+          Culture 100% suisse • Qualité exclusive • CBD légal (&lt;1% THC)
         </p>
       </section>
 
@@ -65,7 +65,7 @@ export default function Home() {
         </p>
         <p>
           Notre objectif est de proposer des fleurs CBD authentiques,
-          cultivées avec soin et passion.
+          d'une qualité exclusive et au meilleur prix.
         </p>
       </section>
 
