@@ -10,7 +10,7 @@ export default function Shop() {
 
       {/* Grille des produits */}
       <div className="grid">
-        {products.map(product => (
+        {products.map((product) => (
           <div key={product.id} className="product">
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
