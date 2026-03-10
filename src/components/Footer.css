@@ -1,9 +1,7 @@
-/* Footer.css */
-
-/* === FOOTER GLOBAL === */
+/* Footer sombre premium */
 .footer {
-  background: #fdfcf9;
-  color: #111;
+  background-color: #111; /* même que navbar */
+  color: #fff;
   padding: 50px 20px;
   font-family: 'Poppins', sans-serif;
 }
@@ -21,7 +19,7 @@
 .footer-brand,
 .footer-column {
   flex: 1;
-  min-width: 200px; /* pour éviter qu’elles soient trop étroites */
+  min-width: 200px; /* éviter qu’elles soient trop étroites */
 }
 
 /* Logo */
@@ -38,7 +36,7 @@
 .footer-brand p {
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #555555;
+  color: #ccc;
 }
 
 /* Réseaux sociaux */
@@ -65,30 +63,30 @@
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #111;
+  color: #fff;
 }
 
 /* Liens des colonnes */
 .footer-column a {
   display: block;
-  color: #555555;
+  color: #ccc;
   text-decoration: none; /* supprime le soulignement */
   margin-bottom: 8px;
   transition: color 0.2s;
 }
 
 .footer-column a:hover {
-  color: #b87333; /* cuivre premium au hover */
+  color: #b87333; /* cuivre au hover */
 }
 
 /* Bas du footer */
 .footer-bottom {
   margin-top: 40px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #2ecc71; /* même bordure que navbar */
   padding-top: 20px;
   text-align: center;
   font-size: 0.9rem;
-  color: #555555;
+  color: #ccc;
 }
 
 /* Responsive */
