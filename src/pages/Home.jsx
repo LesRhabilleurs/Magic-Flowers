@@ -1,6 +1,7 @@
 import React from "react"
 import Footer from "../components/Footer"
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -14,8 +15,10 @@ export default function Home() {
           pour révéler toute la richesse naturelle du cannabis.
         </p>
         <div className="hero-buttons">
-          <button>Découvrir nos fleurs</button>
-        </div>
+    <Link to="/shop">
+      <button>Découvrir nos fleurs</button>
+    </Link>
+  </div>
         <p className="hero-info">
           Culture 100% suisse • Qualité exclusive • Produits légaux (&lt;1% THC)
         </p>
