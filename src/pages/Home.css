@@ -40,8 +40,9 @@ section {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 60px;
   background:
     linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.4)),
     url("/hero-cannabis.jpg");
