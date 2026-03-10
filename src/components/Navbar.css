@@ -35,7 +35,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #ba895b /* ou var(--text-main) si tu veux utiliser les variables premium */
+  color: #ba895b; /* ou var(--text-main) si tu veux utiliser les variables premium */
   text-decoration: none;
 }
 
