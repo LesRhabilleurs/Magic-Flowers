@@ -1,8 +1,79 @@
+/* Container global de la page Shop */
+.shop {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* Titre centré premium */
 .shop-title {
-  text-align: center;      /* centre le texte horizontalement */
+  text-align: center;           /* centre horizontalement */
   font-family: 'Montserrat', sans-serif; /* police premium */
   font-weight: 700;
   font-size: 2.5rem;
-  color: var(--text-main); /* ou une couleur de ton thème */
-  margin: 40px 0;           /* espace au-dessus et en dessous */
+  color: #b87333;               /* cuivre premium */
+  margin-bottom: 50px;          /* espace entre le titre et la grille */
+}
+
+/* Grille produits héritée du style global */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Cartes produits héritées du style global pour le luxe */
+.product {
+  background: var(--bg-card);
+  border-radius: 18px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  border: 1px solid var(--border-soft);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px var(--shadow-light);
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  border: 1px solid var(--primary);
+  box-shadow: 0 12px 30px var(--shadow-hover);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.product h3 {
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+.product p {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.product button {
+  font-family: 'Poppins', sans-serif;
+  background: var(--primary);
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px var(--shadow-light);
+}
+
+.product button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px var(--shadow-hover);
 }
