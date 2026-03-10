@@ -1,4 +1,4 @@
-/* === Navbar Premium === */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -10,6 +10,7 @@
   z-index: 100;
 }
 
+/* Logo */
 .logo {
   height: 100px;
   width: auto;
@@ -21,6 +22,7 @@
   transform: scale(1.05);
 }
 
+/* Liens */
 .nav-links {
   display: flex;
   align-items: center;
@@ -38,7 +40,7 @@
   color: #2ecc71;
 }
 
-/* Panier */
+/* Panier bouton (Cart.jsx) */
 .cart-container button {
   background: #ffffff;
   border: none;
@@ -56,7 +58,7 @@
   transform: translateY(-2px);
 }
 
-/* Burger menu (mobile) */
+/* Burger menu */
 .burger-menu {
   display: none;
   flex-direction: column;
@@ -69,14 +71,43 @@
   height: 3px;
   background: #2ecc71;
   border-radius: 2px;
+  transition: 0.3s;
 }
 
-/* === Responsive === */
+/* Burger menu ouvert animation */
+.burger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* on pourra toggle via JS pour menu mobile */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    gap: 20px;
+    display: none;
+    border-left: 2px solid #2ecc71;
   }
+
+  .nav-links.open {
+    display: flex;
+  }
+
   .burger-menu {
     display: flex;
   }
 }
+
