@@ -41,16 +41,6 @@ export default function Footer() {
           <a href="/conditions">Conditions générales</a>
         </div>
 
-        {/* Newsletter */}
-        <div className="footer-column newsletter">
-          <h4>Newsletter</h4>
-          <p>Recevez nos nouveautés et offres exclusives.</p>
-
-          <div className="newsletter-form">
-            <input type="email" placeholder="Votre email" />
-            <button>S'inscrire</button>
-          </div>
-        </div>
 
       </div>
 
