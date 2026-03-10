@@ -1,0 +1,208 @@
+/* === VARIABLES COULEURS PREMIUM LUXE === */
+:root {
+  --bg-primary: #fdfcf9;       /* fond général doux et lumineux */
+  --bg-section: #ffffff;       /* sections principales */
+  --bg-card: #fcfcfc;          /* cartes produits */
+  
+  --primary: #6bd36b;          /* vert CBD noble */
+  --primary-hover: #4fbf4f;
+
+  --text-main: #111111;        /* texte principal sombre */
+  --text-soft: #555555;        /* texte secondaire élégant */
+
+  --border-soft: #e5e5e5;      /* bordures douces */
+  --shadow-light: rgba(0,0,0,0.08);
+  --shadow-hover: rgba(0,0,0,0.15);
+}
+
+/* === TYPOGRAPHIE PREMIUM === */
+body, .home {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--text-main);
+  background: var(--bg-primary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* === SECTIONS CENTRÉES === */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* === HERO === */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.4)),
+    url("/hero-cannabis.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--text-main);
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  opacity: 0.9;
+  color: var(--text-soft);
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  font-family: 'Poppins', sans-serif;
+  background: var(--primary);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px var(--shadow-light);
+}
+
+.hero button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px var(--shadow-hover);
+}
+
+.hero-info {
+  opacity: 0.8;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
+
+/* === FEATURES GRID === */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--border-soft);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px var(--shadow-light);
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+  border: 1px solid var(--primary);
+  box-shadow: 0 12px 25px var(--shadow-hover);
+}
+
+.feature h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+/* === PHILOSOPHIE === */
+.philosophy {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.philosophy h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.philosophy p {
+  margin-bottom: 15px;
+  color: var(--text-soft);
+}
+
+/* === TRANSPARENCY / ENGAGEMENT === */
+.transparency {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.transparency h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.transparency ul {
+  margin-top: 20px;
+  padding-left: 20px;
+  color: var(--text-soft);
+}
+
+.transparency li {
+  margin-bottom: 10px;
+}
+
+/* === DISCLAIMER === */
+.legal {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.legal h2 {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy, .transparency, .legal {
+    padding: 40px 15px;
+  }
+}
