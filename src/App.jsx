@@ -12,7 +12,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar cart={cart} />
+
+      <Navbar cart={cart} setCart={setCart} />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +23,7 @@ function App() {
           element={<Shop cart={cart} setCart={setCart} />}
         />
       </Routes>
+
     </BrowserRouter>
   )
 }
