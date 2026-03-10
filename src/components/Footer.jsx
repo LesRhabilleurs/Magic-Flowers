@@ -57,9 +57,6 @@ export default function Footer() {
       {/* Bas du footer */}
       <div className="footer-bottom">
         <p>© 2026 Magic Flowers — Tous droits réservés</p>
-        <p className="footer-note">
-          Produits CBD conformes à la législation européenne (THC &lt; 0.3%)
-        </p>
       </div>
 
     </footer>
