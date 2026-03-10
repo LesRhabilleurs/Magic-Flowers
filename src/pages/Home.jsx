@@ -41,7 +41,7 @@ export default function Home() {
       {/* PHILOSOPHIE */}
       <section className="philosophy">
         <h2>Notre philosophie</h2>
-        <p>Chez Magic Flowers, le cannabis est avant tout une plante exceptionnelle. Nous mettons tout en œuvre pour respecter sa nature, sa culture et ses propriétés aromatiques.</p>
+        <p>Le cannabis est avant tout une plante exceptionnelle. Nous mettons tout en œuvre pour respecter sa nature, sa culture et ses propriétés aromatiques.</p>
         <p>Notre objectif est de proposer des fleurs CBD authentiques, cultivées avec soin et passion.</p>
       </section>
 
