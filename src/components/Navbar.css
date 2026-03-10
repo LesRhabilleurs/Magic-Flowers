@@ -25,7 +25,7 @@
 /* Conteneur logo + nom */
 .logo-container {
   display: flex;
-  align-items: center;
+  align-items: fllex-end;
   gap: 10px; /* espace entre le logo et le texte */
   text-decoration: none;
 }
