@@ -46,7 +46,7 @@
 
 /* Ajuste le logo pour être à la même hauteur que le texte */
 .logo-container .logo {
-  height: 50px; /* ajuster selon la taille souhaitée */
+  height: 100px; /* ajuster selon la taille souhaitée */
   width: auto;
 }
 
