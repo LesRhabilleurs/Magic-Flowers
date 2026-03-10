@@ -38,33 +38,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRODUITS */}
-      <section className="products">
-        <h2>Nos fleurs CBD</h2>
-        <p>Découvrez une sélection de fleurs CBD riches en arômes, soigneusement cultivées pour offrir une expérience unique.</p>
-        <div className="grid">
-          <div className="product">
-            <img src="/fleur1.jpg" alt="Fleur CBD 1" />
-            <h3>Fleur A</h3>
-            <p>Arôme floral et doux.</p>
-            <button>Ajouter au panier</button>
-          </div>
-          <div className="product">
-            <img src="/fleur2.jpg" alt="Fleur CBD 2" />
-            <h3>Fleur B</h3>
-            <p>Notes terreuses et relaxantes.</p>
-            <button>Ajouter au panier</button>
-          </div>
-          <div className="product">
-            <img src="/fleur3.jpg" alt="Fleur CBD 3" />
-            <h3>Fleur C</h3>
-            <p>Arômes doux et fruités.</p>
-            <button>Ajouter au panier</button>
-          </div>
-        </div>
-        <button className="view-shop">Voir tous les produits</button>
-      </section>
-
       {/* PHILOSOPHIE */}
       <section className="philosophy">
         <h2>Notre philosophie</h2>
