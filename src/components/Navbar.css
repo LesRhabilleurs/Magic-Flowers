@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   gap: 10px; /* espace entre le logo et le texte */
+  text-decoration: none;
 }
 
 /* Texte à côté du logo */
@@ -34,7 +35,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #FFD700; /* ou var(--text-main) si tu veux utiliser les variables premium */
+  color: #ba895b /* ou var(--text-main) si tu veux utiliser les variables premium */
   text-decoration: none;
 }
 
