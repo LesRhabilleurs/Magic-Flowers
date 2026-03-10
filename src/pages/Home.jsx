@@ -7,7 +7,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
-        <h1>Bienvenue chez Magic Flowers</h1>
+        <h1>Bienvenue chez Magic Flowers !</h1>
         <p>
           Chez nous vous trouverez des fleurs de CBD cultivées avec passion et dans des conditions optimales
           pour révéler toute la richesse naturelle du cannabis.
