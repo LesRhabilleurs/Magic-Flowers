@@ -1,9 +1,9 @@
 import products from "../data/products"
-
+import "./Shop.css"; // CSS spécifique à la page
 export default function Shop() {
   return (
     <div>
-      <h1>Boutique</h1>
+      <h1>Nos produits</h1>
       <div className="grid">
         {products.map(product => (
           <div key={product.id} className="product">
