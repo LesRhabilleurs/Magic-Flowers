@@ -59,10 +59,6 @@ export default function Home() {
       {/* DISCLAIMER */}
       <section className="legal">
         <p>"Nos produits CBD sont conformes à la législation suisse et contiennent moins de 1% de THC. Ils ne sont pas destinés à être utilisés comme substitut du tabac."</p>
-      </section>
-
-      {/* CTA */}
-      <section className="cta">
         <h2>Prêt à découvrir nos fleurs ?</h2>
       </section>
 
