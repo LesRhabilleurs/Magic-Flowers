@@ -13,7 +13,7 @@ export default function Home() {
           <button>Découvrir nos fleurs</button>
           <button>Voir la boutique</button>
         </div>
-        <p className="hero-info">Culture suisse • Qualité premium • CBD légal (&lt;1% THC)</p>
+        <p className="hero-info">Culture suisse • Qualité exclusive • CBD légal (&lt;1% THC)</p>
       </section>
 
       {/* POURQUOI NOUS */}
@@ -86,13 +86,12 @@ export default function Home() {
 
       {/* DISCLAIMER */}
       <section className="legal">
-        <p>Nos produits CBD sont conformes à la législation suisse et contiennent moins de 1% de THC. Ils ne sont pas destinés à être utilisés comme substitut du tabac.</p>
+        <p>"Nos produits CBD sont conformes à la législation suisse et contiennent moins de 1% de THC. Ils ne sont pas destinés à être utilisés comme substitut du tabac."</p>
       </section>
 
       {/* CTA */}
       <section className="cta">
         <h2>Prêt à découvrir nos fleurs ?</h2>
-        <button>Accéder à la boutique</button>
       </section>
 
     </div>
