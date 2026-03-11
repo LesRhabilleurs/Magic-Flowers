@@ -7,11 +7,11 @@ const faqs = [
     answer: "Nous acceptons les cartes de crédit (Visa, MasterCard), PayPal et les virements bancaires."
   },
   {
-    question: "Puis-je retourner un produit ?",
+    question: "Est-il possible de retourner un produit ?",
     answer: "Oui, vous avez 14 jours pour retourner un produit non utilisé et non ouvert. Les frais de retour sont à votre charge."
   },
   {
-    question: "Comment suivre ma commande ?",
+    question: "Comment puis-je suivre ma commande ?",
     answer: "Après expédition, vous recevrez un email avec un numéro de suivi pour suivre votre colis."
   },
   {
@@ -19,7 +19,7 @@ const faqs = [
     answer: "Oui, nous livrons dans la plupart des pays. Les frais et délais varient selon la destination."
   },
   {
-    question: "Quels sont les frais de livraison ?",
+    question: "Quels sont les frais de livraison qui me sont facturés ?",
     answer: "Les frais de livraison dépendent du poids et de la destination de votre colis. Les frais exacts sont indiqués avant la validation de la commande."
   },
   {
