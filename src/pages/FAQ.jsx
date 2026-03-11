@@ -17,6 +17,14 @@ const faqs = [
   {
     question: "Proposez-vous la livraison internationale ?",
     answer: "Oui, nous livrons dans la plupart des pays. Les frais et délais varient selon la destination."
+  },
+  {
+    question: "Puis-je retourner un produit ?",
+    answer: "Oui, vous avez 14 jours pour retourner un produit non utilisé et non ouvert. Les frais de retour sont à votre charge."
+  },
+  {
+    question: "Comment suivre ma commande ?",
+    answer: "Après expédition, vous recevrez un email avec un numéro de suivi pour suivre votre colis."
   }
 ];
 
