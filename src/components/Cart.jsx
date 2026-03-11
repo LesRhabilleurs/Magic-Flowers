@@ -1,13 +1,12 @@
-import { useState } from "react"
-import "./Cart.css"
-
+import { useState } from "react";
+import "./Cart.css";
+import { motion } from "framer-motion";
 
 export default function Cart({ cart, setCart }) {
-
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const removeFromCart = (id) => {
-    const existingProduct = cart.find(item => item.id === id)
+    const existingProduct = cart.find(item => item.id === id);
 
     if (existingProduct.quantity > 1) {
       setCart(
@@ -16,15 +15,15 @@ export default function Cart({ cart, setCart }) {
             ? { ...item, quantity: item.quantity - 1 }
             : item
         )
-      )
+      );
     } else {
-      setCart(cart.filter(item => item.id !== id))
+      setCart(cart.filter(item => item.id !== id));
     }
-  }
+  };
 
   const total = cart
     .reduce((sum, item) => sum + item.price * item.quantity, 0)
-    .toFixed(2)
+    .toFixed(2);
 
   return (
     <div className="cart-container">
@@ -44,6 +43,14 @@ export default function Cart({ cart, setCart }) {
 
           {cart.map(item => (
             <div key={item.id} className="cart-item">
+
+              {/* Image produit avec layoutId pour animation */}
+              <motion.img
+                layoutId={`product-${item.id}`}
+                src={item.image}
+                alt={item.name}
+                style={{ width: "50px", height: "50px", objectFit: "cover", marginRight: "10px" }}
+              />
 
               <span>
                 {item.name} x{item.quantity}
@@ -76,5 +83,5 @@ export default function Cart({ cart, setCart }) {
       )}
 
     </div>
-  )
+  );
 }
