@@ -5,14 +5,27 @@ import { motion } from "framer-motion";
 
 export default function Shop({ cart, setCart }) {
 
-  const [flyingProduct, setFlyingProduct] = useState(null);
+  const [flying, setFlying] = useState(null);
 
-  const addToCart = (product) => {
+  const addToCart = (product, event) => {
 
-    setFlyingProduct(product);
+    const img = event.currentTarget
+      .closest(".product")
+      .querySelector("img");
+
+    const rect = img.getBoundingClientRect();
+
+    setFlying({
+      image: product.image,
+      x: rect.left,
+      y: rect.top
+    });
 
     setTimeout(() => {
-      const existingProduct = cart.find((item) => item.id === product.id);
+
+      const existingProduct = cart.find(
+        (item) => item.id === product.id
+      );
 
       if (existingProduct) {
         setCart(
@@ -23,10 +36,13 @@ export default function Shop({ cart, setCart }) {
           )
         );
       } else {
-        setCart([...cart, { ...product, quantity: 1 }]);
+        setCart([
+          ...cart,
+          { ...product, quantity: 1 }
+        ]);
       }
 
-      setFlyingProduct(null);
+      setFlying(null);
 
     }, 600);
   };
@@ -41,11 +57,14 @@ export default function Shop({ cart, setCart }) {
           <div key={product.id} className="product">
 
             <img src={product.image} alt={product.name} />
+
             <h3>{product.name}</h3>
+
             <p>{product.description}</p>
+
             <p>CHF {product.price.toFixed(2)}</p>
 
-            <button onClick={() => addToCart(product)}>
+            <button onClick={(e) => addToCart(product, e)}>
               Ajouter au panier
             </button>
 
@@ -53,19 +72,27 @@ export default function Shop({ cart, setCart }) {
         ))}
       </div>
 
-      {flyingProduct && (
+      {flying && (
         <motion.img
-          src={flyingProduct.image}
-          initial={{ x: 0, y: 0, scale: 1, opacity: 1 }}
-          animate={{ x: 500, y: -300, scale: 0.2, opacity: 0 }}
+          src={flying.image}
+          initial={{
+            x: flying.x,
+            y: flying.y,
+            scale: 1,
+            opacity: 1
+          }}
+          animate={{
+            x: window.innerWidth - 120,
+            y: 30,
+            scale: 0.2,
+            opacity: 0
+          }}
           transition={{ duration: 0.6 }}
           style={{
             position: "fixed",
-            bottom: "200px",
-            left: "40%",
             width: "100px",
             pointerEvents: "none",
-            zIndex: 1000
+            zIndex: 9999
           }}
         />
       )}
