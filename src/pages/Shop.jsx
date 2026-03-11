@@ -28,7 +28,7 @@ export default function Shop({ cart, setCart }) {
       <div className="grid">
         {products.map(product => (
           <div key={product.id} className="product">
-            {/* L’image utilise layoutId pour animation fluide */}
+            {/* Image avec layoutId pour animation */}
             <motion.img
               layoutId={`product-${product.id}`}
               src={product.image}
