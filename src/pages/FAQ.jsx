@@ -19,12 +19,12 @@ const faqs = [
     answer: "Oui, nous livrons dans la plupart des pays. Les frais et délais varient selon la destination."
   },
   {
-    question: "Puis-je retourner un produit ?",
-    answer: "Oui, vous avez 14 jours pour retourner un produit non utilisé et non ouvert. Les frais de retour sont à votre charge."
+    question: "Quels sont les frais de livraison ?",
+    answer: "Les frais de livraison dépendent du poids et de la destination de votre colis. Les frais exacts sont indiqués avant la validation de la commande."
   },
   {
-    question: "Comment suivre ma commande ?",
-    answer: "Après expédition, vous recevrez un email avec un numéro de suivi pour suivre votre colis."
+    question: "Combien de temps faut-il pour recevoir ma commande ?",
+    answer: "Les délais de livraison dépendent de votre localisation et du mode d’expédition choisi. En général, comptez 3 à 7 jours ouvrables pour la livraison standard."
   }
 ];
 
