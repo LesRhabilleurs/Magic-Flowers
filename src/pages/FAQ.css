@@ -12,6 +12,13 @@
   font-size: 2.5rem;
 }
 
+/* Nouvelle règle pour 2 colonnes */
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem; /* espace vertical et horizontal entre les questions */
+}
+
 .faq-item {
   border-bottom: 1px solid #ccc;
 }
@@ -43,4 +50,11 @@
 .faq-answer {
   padding: 0 1rem 1rem 1rem;
   color: #333;
+}
+
+/* Responsive : une seule colonne sur mobile */
+@media (max-width: 768px) {
+  .faq-list {
+    grid-template-columns: 1fr;
+  }
 }
