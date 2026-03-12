@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Faq from "./pages/FAQ";
 import Navbar from "./components/Navbar";
