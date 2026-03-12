@@ -1,0 +1,106 @@
+/* === CONTACT PAGE === */
+
+.contact-page {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg-section);
+  padding: 50px;
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 6px 20px var(--shadow-light);
+  transition: all 0.3s ease;
+}
+
+.contact-container:hover {
+  box-shadow: 0 10px 30px var(--shadow-hover);
+}
+
+/* === HEADER === */
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header p {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* === FORM === */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-card);
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 0 3px rgba(107, 211, 107, 0.15);
+}
+
+/* === BUTTON === */
+
+.contact-form button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* === CONTACT INFO === */
+
+.contact-info {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border-soft);
+  text-align: center;
+}
+
+.contact-info h3 {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* === RESPONSIVE === */
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    padding: 35px 25px;
+  }
+
+}
