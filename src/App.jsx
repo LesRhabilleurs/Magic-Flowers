@@ -25,6 +25,8 @@ function App() {
           element={<Shop cart={cart} setCart={setCart} />}
         />
 
+        <Route path="/contact" element={<Contact />} />
+
         {/* Route FAQ ajoutée */}
         <Route path="/faq" element={<Faq />} />
       </Routes>
