@@ -26,9 +26,12 @@
 .contact-header {
   text-align: center;
   margin-bottom: 40px;
-  font-weight: 700;
 }
 
+.contact-header h1 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
 .contact-header p {
   max-width: 500px;
   margin: auto;
