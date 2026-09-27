@@ -71,7 +71,7 @@ export default function Contact() {
 
         <div className="contact-info">
           <h3>Email</h3>
-          <p>magic-flowers@info.ch</p>
+          <p>magic-botanics@hotmail.com</p>
 
           <h3>Support</h3>
           <p>Lundi - Vendredi : 18h - 22h</p>
