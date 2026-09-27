@@ -7,6 +7,7 @@ import Shop from "./pages/Shop";
 import Faq from "./pages/FAQ";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AgeGate from "./components/AgeGate";
 
 import "./App.css";
 
@@ -14,26 +15,28 @@ function App() {
   const [cart, setCart] = useState([]);
 
   return (
-    <BrowserRouter>
-      {/* Navbar visible sur toutes les pages */}
-      <Navbar cart={cart} setCart={setCart} />
+    <AgeGate>
+      <BrowserRouter>
+        {/* Navbar visible sur toutes les pages */}
+        <Navbar cart={cart} setCart={setCart} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route
-          path="/shop"
-          element={<Shop cart={cart} setCart={setCart} />}
-        />
+          <Route
+            path="/shop"
+            element={<Shop cart={cart} setCart={setCart} />}
+          />
 
-        <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
 
-        <Route path="/faq" element={<Faq />} />
-      </Routes>
+          <Route path="/faq" element={<Faq />} />
+        </Routes>
 
-      {/* Footer visible sur toutes les pages */}
-      <Footer />
-    </BrowserRouter>
+        {/* Footer visible sur toutes les pages */}
+        <Footer />
+      </BrowserRouter>
+    </AgeGate>
   );
 }
 
