@@ -12,7 +12,7 @@ export default function Navbar({ cart, setCart }) {
       {/* Logo + Nom du site */}
       <Link to="/" className="logo-link">
         <div className="logo-container">
-          <img src={logo} alt="Magic Botanic's" className="logo" />
+          <img src={logo} alt="Magic Botanics" className="logo" />
         </div>
       </Link>
 
