@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Logo + description */}
         <div className="footer-brand">
           <h2 className="footer-logo">
-             Magic Botanic's
+             Magic Botanics
           </h2>
           <p>
             CBD premium sélectionné avec soin. Produits naturels,
@@ -46,7 +46,7 @@ export default function Footer() {
 
       {/* Bas du footer */}
       <div className="footer-bottom">
-        <p>© 2026 Magic Flowers — Tous droits réservés</p>
+        <p>© 2026 Magic Botanics — Tous droits réservés</p>
       </div>
 
     </footer>
