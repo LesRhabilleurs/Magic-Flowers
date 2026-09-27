@@ -2,7 +2,7 @@
 .shop {
   max-width: 1200px;
   margin: auto;
-  padding: 0px 20px;
+  padding: 100px 20px 140px;
 }
 
 /* === Titre centré noir et plus haut === */
@@ -10,8 +10,8 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;       /* plus haut */
-  color: #6bd36b;        /* noir */
+  font-size: 2.5rem;
+  color: #6bd36b;
   margin-bottom: 50px;
 }
 
@@ -84,10 +84,14 @@
 /* === Responsive mobile === */
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr; /* une carte par ligne sur mobile */
+    grid-template-columns: 1fr;
   }
 
   .shop-title {
     font-size: 2.4rem;
+  }
+
+  .shop {
+    padding: 70px 20px 100px;
   }
 }
