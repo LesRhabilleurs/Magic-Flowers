@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Fleur CBD High Society (3g)",
+    name: "Fleurs CBD Amnesia Haze (3.5g)",
     price: 19.90,
     description: "Fleurs de CBD suisse de qualité supérieure au gout citronné",
     image: "/fleur3.jpeg"
