@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Faq from "./pages/FAQ";
+import CannaNews from "./pages/CannaNews";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AgeGate from "./components/AgeGate";
@@ -17,24 +19,47 @@ function App() {
   return (
     <AgeGate>
       <BrowserRouter>
+
         {/* Navbar visible sur toutes les pages */}
         <Navbar cart={cart} setCart={setCart} />
 
         <Routes>
+          {/* Accueil */}
           <Route path="/" element={<Home />} />
 
+          {/* Boutique */}
           <Route
             path="/shop"
-            element={<Shop cart={cart} setCart={setCart} />}
+            element={
+              <Shop
+                cart={cart}
+                setCart={setCart}
+              />
+            }
           />
 
-          <Route path="/contact" element={<Contact />} />
+          {/* Contact */}
+          <Route
+            path="/contact"
+            element={<Contact />}
+          />
 
-          <Route path="/faq" element={<Faq />} />
+          {/* FAQ */}
+          <Route
+            path="/faq"
+            element={<Faq />}
+          />
+
+          {/* CannaNews */}
+          <Route
+            path="/cannanews"
+            element={<CannaNews />}
+          />
         </Routes>
 
         {/* Footer visible sur toutes les pages */}
         <Footer />
+
       </BrowserRouter>
     </AgeGate>
   );
