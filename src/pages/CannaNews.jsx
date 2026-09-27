@@ -5,9 +5,9 @@ const articles = [
     id: 1,
     category: "Suisse",
     date: "27 septembre 2026",
-    title: "Le cannabis en Suisse : où en est la réglementation ?",
+    title: "Cannabis en Suisse : comprendre le cadre légal",
     excerpt:
-      "Le cadre juridique suisse distingue notamment le cannabis contenant moins de 1 % de THC du cannabis soumis à la législation sur les stupéfiants.",
+      "En Suisse, le cadre légal distingue notamment les produits contenant moins de 1 % de THC des produits soumis à la législation sur les stupéfiants.",
     source: "OFSP",
     link: "https://www.bag.admin.ch/fr/situation-juridique-des-produits-a-base-de-chanvre-et-de-cannabis",
   },
@@ -15,9 +15,9 @@ const articles = [
     id: 2,
     category: "Réglementation",
     date: "27 septembre 2026",
-    title: "Vers une nouvelle réglementation du cannabis en Suisse",
+    title: "Le cadre réglementaire du cannabis évolue",
     excerpt:
-      "Un avant-projet de loi sur les produits cannabiques prévoit un cadre réglementé pour l'utilisation du cannabis à des fins non médicales.",
+      "Les autorités suisses travaillent sur l'évolution du cadre applicable aux produits cannabiques et à leur utilisation.",
     source: "OFSP",
     link: "https://www.bag.admin.ch/fr/nouvelle-loi-produits-cannabiques",
   },
@@ -25,19 +25,19 @@ const articles = [
     id: 3,
     category: "CBD",
     date: "27 septembre 2026",
-    title: "CBD et chanvre : comprendre le cadre légal suisse",
+    title: "CBD et produits à base de chanvre",
     excerpt:
-      "Les produits contenant du CBD ou du chanvre peuvent relever de différentes législations selon leur composition et leur utilisation.",
+      "Les produits contenant des cannabinoïdes peuvent être soumis à différentes réglementations selon leur composition et leur utilisation.",
     source: "OSAV",
     link: "https://www.blv.admin.ch/fr/cannabis-cannabinoides-aliments",
   },
   {
     id: 4,
-    category: "Recherche",
+    category: "Santé",
     date: "27 septembre 2026",
-    title: "Cannabis médical : ce que dit la réglementation suisse",
+    title: "Cannabis médical en Suisse",
     excerpt:
-      "Depuis août 2022, les médecins suisses peuvent prescrire certains médicaments à base de cannabis sans autorisation exceptionnelle de l'OFSP.",
+      "Le cannabis médical dispose d'un cadre spécifique en Suisse. Les médecins peuvent prescrire certains médicaments à base de cannabis dans les conditions prévues par la réglementation.",
     source: "OFSP",
     link: "https://www.bag.admin.ch/fr/utilisation-du-cannabis-a-des-fins-medicales",
   },
@@ -48,7 +48,7 @@ function CannaNews() {
     <main className="canna-news">
 
       {/* HEADER */}
-      <section className="canna-news-header">
+      <header className="canna-news-header">
         <span className="canna-news-label">
           ACTUALITÉS
         </span>
@@ -56,42 +56,15 @@ function CannaNews() {
         <h1>CannaNews</h1>
 
         <p>
-          L'actualité du cannabis légal, du CBD et du chanvre
-          en Suisse.
+          Toute l'actualité du cannabis légal, du CBD et du chanvre.
         </p>
-      </section>
-
-      {/* FILTRES */}
-      <div className="canna-news-filters">
-        <button className="active">
-          Toutes
-        </button>
-
-        <button>
-          Suisse
-        </button>
-
-        <button>
-          CBD
-        </button>
-
-        <button>
-          Réglementation
-        </button>
-
-        <button>
-          Recherche
-        </button>
-      </div>
+      </header>
 
       {/* ARTICLES */}
       <section className="canna-news-grid">
-
         {articles.map((article) => (
-          <article
-            className="news-card"
-            key={article.id}
-          >
+          <article className="news-card" key={article.id}>
+
             <div className="news-card-top">
               <span className="news-category">
                 {article.category}
@@ -104,13 +77,9 @@ function CannaNews() {
 
             <div className="news-card-content">
 
-              <h2>
-                {article.title}
-              </h2>
+              <h2>{article.title}</h2>
 
-              <p>
-                {article.excerpt}
-              </p>
+              <p>{article.excerpt}</p>
 
               <div className="news-card-footer">
 
@@ -123,30 +92,29 @@ function CannaNews() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Lire l'article →
+                  Lire la source →
                 </a>
 
               </div>
 
             </div>
+
           </article>
         ))}
-
       </section>
 
       {/* INFORMATION */}
       <section className="canna-news-info">
 
         <h2>
-          Une information claire et vérifiée
+          CannaNews
         </h2>
 
         <p>
-          CannaNews a pour objectif de présenter les évolutions
-          du cannabis légal, du CBD et du chanvre de manière
-          simple et accessible. Les informations réglementaires
-          sont accompagnées de leurs sources afin de permettre
-          de consulter les informations officielles.
+          Cette rubrique présente des informations sur le cannabis
+          légal, le CBD, le chanvre et leur réglementation. Les
+          informations réglementaires sont accompagnées de leurs
+          sources officielles.
         </p>
 
       </section>
