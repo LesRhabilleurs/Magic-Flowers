@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./AgeGate.css";
 
-const AGE_GATE_KEY = "magicFlowersAgeVerified";
+const AGE_GATE_KEY = "magicBotanicssAgeVerified";
 
 function calculateAge(dateOfBirth) {
   const today = new Date();
@@ -79,14 +79,14 @@ export default function AgeGate({ children }) {
       <div className="age-gate-card">
 
         <div className="age-gate-logo">
-          MAGIC FLOWERS
+          MAGIC BOTANICS
         </div>
 
         <div className="age-gate-badge">
           18+
         </div>
 
-        <h1>Bienvenue chez Magic Flowers</h1>
+        <h1>Bienvenue chez Magic Botanics</h1>
 
         <p className="age-gate-intro">
           Notre site propose des produits destinés aux personnes
