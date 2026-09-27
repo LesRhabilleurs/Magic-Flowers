@@ -9,7 +9,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
-        <h1>Bienvenue chez Magic Flowers</h1>
+        <h1>Bienvenue chez Magic Botanics</h1>
         <p>
           Chez nous vous trouverez des fleurs de CBD cultivées avec passion et dans des conditions optimales
           pour révéler toute la richesse naturelle du cannabis.
@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* POURQUOI NOUS */}
       <section className="features">
-        <h2>Pourquoi choisir Magic Flowers</h2>
+        <h2>Pourquoi choisir Magic Botanics</h2>
         <div className="features-grid">
           <div className="feature">
             <h3>Qualité Premium</h3>
