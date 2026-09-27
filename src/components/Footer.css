@@ -1,98 +1,268 @@
-/* Footer sombre premium */
+/* =========================================
+   FOOTER
+   ========================================= */
+
 .footer {
-  background-color: #111; /* même que navbar */
+  background-color: #111;
   color: #fff;
-  padding: 50px 20px;
-  font-family: 'Poppins', sans-serif;
+  padding: 70px 24px 25px;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Container des colonnes */
+/* =========================================
+   CONTENEUR PRINCIPAL
+   ========================================= */
+
 .footer-container {
-  display: flex;
-  flex-wrap: wrap; /* pour mobile */
-  gap: 40px;
+  width: 100%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 50px;
 }
 
-/* Chaque colonne prend la même largeur */
+/* =========================================
+   COLONNES
+   ========================================= */
+
 .footer-brand,
 .footer-column {
-  flex: 1;
-  min-width: 200px; /* éviter qu’elles soient trop étroites */
+  min-width: 0;
 }
 
-/* Logo */
+/* =========================================
+   LOGO
+   ========================================= */
+
 .footer-logo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
-  color: #6bd36b; /* cuivre premium */
-  margin-bottom: 15px;
+  font-weight: 700;
+
+  color: #6bd36b;
   text-decoration: none;
+
+  letter-spacing: 0.02em;
 }
 
-/* Description */
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
 .footer-brand p {
+  max-width: 340px;
+
+  margin: 0;
+
   font-size: 0.95rem;
-  line-height: 1.5;
-  color: #ccc;
+  line-height: 1.7;
+
+  color: #bdbdbd;
 }
 
-/* Réseaux sociaux */
+/* =========================================
+   RÉSEAUX SOCIAUX
+   ========================================= */
+
 .footer-social {
-  margin-top: 15px;
   display: flex;
-  gap: 15px;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 28px;
 }
 
 .footer-social a {
-  color: #6bd36b; /* cuivre premium */
-  font-size: 1.3rem;
-  transition: transform 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  color: #6bd36b;
+  font-size: 1.2rem;
+
+  border: 1px solid rgba(107, 211, 107, 0.25);
+  border-radius: 50%;
+
   text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .footer-social a:hover {
-  color: #a15c2f;
-  transform: scale(1.2);
+  color: #111;
+  background-color: #6bd36b;
+  border-color: #6bd36b;
+
+  transform: translateY(-3px);
 }
 
-/* Titres des colonnes */
+/* =========================================
+   TITRES DES COLONNES
+   ========================================= */
+
 .footer-column h4 {
+  margin: 0 0 22px;
+
+  font-size: 1rem;
   font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+
   color: #fff;
+
+  letter-spacing: 0.02em;
 }
 
-/* Liens des colonnes */
+/* Petite ligne sous les titres */
+.footer-column h4::after {
+  content: "";
+
+  display: block;
+
+  width: 28px;
+  height: 2px;
+
+  margin-top: 9px;
+
+  background-color: #6bd36b;
+}
+
+/* =========================================
+   LIENS
+   ========================================= */
+
 .footer-column a {
   display: block;
-  color: #ccc;
-  text-decoration: none; /* supprime le soulignement */
-  margin-bottom: 8px;
-  transition: color 0.2s;
+
+  margin-bottom: 13px;
+
+  color: #bdbdbd;
+
+  font-size: 0.92rem;
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .footer-column a:hover {
-  color: #6bd36b; /* cuivre au hover */
+  color: #6bd36b;
+
+  transform: translateX(3px);
 }
 
-/* Bas du footer */
+/* Évite un espace inutile sous le dernier lien */
+.footer-column a:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   BAS DU FOOTER
+   ========================================= */
+
 .footer-bottom {
-  margin-top: 40px;
-  border-top: 1px solid #2ecc71; /* même bordure que navbar */
-  padding-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 60px auto 0;
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(107, 211, 107, 0.35);
+
   text-align: center;
-  font-size: 0.9rem;
-  color: #ccc;
+
+  font-size: 0.85rem;
+  line-height: 1.6;
+
+  color: #888;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* =========================================
+   TABLETTE
+   ========================================= */
+
+@media (max-width: 900px) {
   .footer-container {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand p {
+    max-width: 600px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 55px 22px 22px;
+  }
+
+  .footer-container {
+    display: flex;
     flex-direction: column;
-    gap: 30px;
+
+    gap: 38px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 20px;
+  }
+
+  .footer-column h4::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-column a {
+    margin-bottom: 12px;
+  }
+
+  .footer-bottom {
+    margin-top: 45px;
+    padding-top: 20px;
+
+    font-size: 0.8rem;
   }
 }
