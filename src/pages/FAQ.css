@@ -1,7 +1,7 @@
 .faq {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0rem;
+  padding: 100px 20px 140px;
 }
 
 .faq h1 {
@@ -16,7 +16,7 @@
 .faq-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2rem; /* espace vertical et horizontal entre les questions */
+  gap: 1rem 2rem;
 }
 
 .faq-item {
