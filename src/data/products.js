@@ -1,14 +1,14 @@
 const products = [
   {
     id: 1,
-    name: "Fleur CBD High Society (10g)",
-    price: 59.90,
-    description: "Fleurs de CBD suisse de qualité supérieure au gout Bonbon",
-    image: "/fleur1.jpeg"
+    name: "Fleurs CBD Sour Diesel (3.5g)",
+    price: 19.90,
+    description: "Fleurs de CBD suisse de qualité supérieure au gout épicé",
+    image: "/fleur1.png"
   },
   {
     id: 2,
-    name: "Fleur CBD Blue Berry (3.5)",
+    name: "Fleurs CBD Blue Berry (3.5g)",
     price: 19.90,
     description: "Fleurs de CBD suisse de qualité supérieure au gout de fruits de bois",
     image: "/fleur2.png"
@@ -18,7 +18,7 @@ const products = [
     name: "Fleurs CBD Amnesia Haze (3.5g)",
     price: 19.90,
     description: "Fleurs de CBD suisse de qualité supérieure au gout citronné",
-    image: "/fleur3.jpeg"
+    image: "/fleur3.png"
   }
 ]
 
