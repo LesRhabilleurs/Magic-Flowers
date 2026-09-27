@@ -20,7 +20,7 @@ export default function Navbar({ cart, setCart }) {
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>Accueil</Link>
         <Link to="/shop" onClick={() => setMenuOpen(false)}>Boutique</Link>
-        <Link to="/accessoires" onClick={() => setMenuOpen(false)}>Accessoires</Link>
+        <Link to="/accessoires" onClick={() => setMenuOpen(false)}>CannaNews</Link>
         <Link to="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
