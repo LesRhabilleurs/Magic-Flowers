@@ -1,4 +1,3 @@
-```jsx
 import "./Contact.css";
 
 export default function Contact() {
@@ -82,4 +81,3 @@ export default function Contact() {
     </div>
   );
 }
-```
