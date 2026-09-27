@@ -94,10 +94,6 @@ export default function Home() {
         </p>
       </section>
 
-
-      {/* FOOTER */}
-      <Footer />
-
     </div>
   )
 }
