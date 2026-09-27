@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 import "./Navbar.css"; // CSS dans le même dossier
 
 export default function Navbar({ cart, setCart }) {
