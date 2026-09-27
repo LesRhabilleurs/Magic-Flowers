@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Faq from "./pages/FAQ";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -27,9 +28,11 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
 
-        {/* Route FAQ ajoutée */}
         <Route path="/faq" element={<Faq />} />
       </Routes>
+
+      {/* Footer visible sur toutes les pages */}
+      <Footer />
     </BrowserRouter>
   );
 }
