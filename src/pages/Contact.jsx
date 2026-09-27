@@ -74,7 +74,7 @@ export default function Contact() {
           <p>magic-flowers@info.ch</p>
 
           <h3>Support</h3>
-          <p>Lundi - Vendredi : 9h - 18h</p>
+          <p>Lundi - Vendredi : 18h - 22h</p>
         </div>
 
       </div>
