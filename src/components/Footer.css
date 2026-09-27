@@ -1,27 +1,25 @@
 /* =========================================
-   FOOTER
+   FOOTER SOMBRE PREMIUM
    ========================================= */
 
 .footer {
   background-color: #111;
   color: #fff;
-  padding: 70px 24px 25px;
+  padding: 50px 20px;
   font-family: "Poppins", sans-serif;
 }
 
 /* =========================================
-   CONTENEUR PRINCIPAL
+   CONTAINER DES COLONNES
    ========================================= */
 
 .footer-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  column-gap: 70px;
-  row-gap: 50px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* =========================================
@@ -30,7 +28,8 @@
 
 .footer-brand,
 .footer-column {
-  min-width: 0;
+  flex: 1;
+  min-width: 200px;
 }
 
 /* =========================================
@@ -38,18 +37,15 @@
    ========================================= */
 
 .footer-logo {
-  display: inline-block;
-
-  margin-bottom: 20px;
-
   font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
   font-weight: 700;
+  font-size: 1.8rem;
 
   color: #6bd36b;
-  text-decoration: none;
 
-  letter-spacing: 0.02em;
+  margin-bottom: 15px;
+
+  text-decoration: none;
 }
 
 /* =========================================
@@ -57,14 +53,12 @@
    ========================================= */
 
 .footer-brand p {
-  max-width: 340px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  color: #ccc;
 
   margin: 0;
-
-  font-size: 0.95rem;
-  line-height: 1.7;
-
-  color: #bdbdbd;
 }
 
 /* =========================================
@@ -72,43 +66,27 @@
    ========================================= */
 
 .footer-social {
+  margin-top: 20px;
+
   display: flex;
-  align-items: center;
-
-  gap: 18px;
-
-  margin-top: 28px;
+  gap: 15px;
 }
 
 .footer-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 38px;
-  height: 38px;
-
   color: #6bd36b;
-  font-size: 1.2rem;
 
-  border: 1px solid rgba(107, 211, 107, 0.25);
-  border-radius: 50%;
+  font-size: 1.3rem;
 
   text-decoration: none;
 
   transition:
-    color 0.25s ease,
-    background-color 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.25s ease;
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 .footer-social a:hover {
-  color: #111;
-  background-color: #6bd36b;
-  border-color: #6bd36b;
-
-  transform: translateY(-3px);
+  color: #a15c2f;
+  transform: scale(1.2);
 }
 
 /* =========================================
@@ -116,23 +94,24 @@
    ========================================= */
 
 .footer-column h4 {
-  margin: 0 0 22px;
+  display: inline-block;
 
-  font-size: 1rem;
   font-weight: 600;
+  font-size: 1.1rem;
+
+  margin: 0 0 20px;
 
   color: #fff;
-
-  letter-spacing: 0.02em;
 }
 
-/* Petite ligne sous les titres */
+/* Barre verte sous les titres */
 .footer-column h4::after {
   content: "";
 
   display: block;
 
-  width: 28px;
+  width: 100%;
+  max-width: 100px;
   height: 2px;
 
   margin-top: 9px;
@@ -141,20 +120,17 @@
 }
 
 /* =========================================
-   LIENS
+   LIENS DES COLONNES
    ========================================= */
 
 .footer-column a {
   display: block;
 
-  margin-bottom: 13px;
-
-  color: #bdbdbd;
-
-  font-size: 0.92rem;
-  line-height: 1.5;
+  color: #ccc;
 
   text-decoration: none;
+
+  margin-bottom: 10px;
 
   transition:
     color 0.2s ease,
@@ -163,11 +139,10 @@
 
 .footer-column a:hover {
   color: #6bd36b;
-
   transform: translateX(3px);
 }
 
-/* Évite un espace inutile sous le dernier lien */
+/* Évite un espace inutile après le dernier lien */
 .footer-column a:last-child {
   margin-bottom: 0;
 }
@@ -177,92 +152,30 @@
    ========================================= */
 
 .footer-bottom {
-  width: 100%;
-  max-width: 1200px;
+  margin-top: 40px;
 
-  margin: 60px auto 0;
-  padding-top: 24px;
+  border-top: 1px solid #2ecc71;
 
-  border-top: 1px solid rgba(107, 211, 107, 0.35);
+  padding-top: 20px;
 
   text-align: center;
 
-  font-size: 0.85rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
 
-  color: #888;
+  color: #ccc;
 }
 
 /* =========================================
-   TABLETTE
+   RESPONSIVE
    ========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .footer-container {
-    grid-template-columns: 1.5fr 1fr 1fr;
-    column-gap: 40px;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
-
-  .footer-brand p {
-    max-width: 600px;
-  }
-}
-
-/* =========================================
-   MOBILE
-   ========================================= */
-
-@media (max-width: 600px) {
-  .footer {
-    padding: 55px 22px 22px;
-  }
-
-  .footer-container {
-    display: flex;
     flex-direction: column;
-
-    gap: 38px;
-  }
-
-  .footer-brand {
-    text-align: center;
-  }
-
-  .footer-brand p {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .footer-social {
-    justify-content: center;
-    margin-top: 24px;
-  }
-
-  .footer-column {
-    text-align: center;
+    gap: 30px;
   }
 
   .footer-column h4 {
-    margin-bottom: 20px;
-  }
-
-  .footer-column h4::after {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-column a {
-    margin-bottom: 12px;
-  }
-
-  .footer-bottom {
-    margin-top: 45px;
-    padding-top: 20px;
-
-    font-size: 0.8rem;
+    margin-bottom: 18px;
   }
 }
