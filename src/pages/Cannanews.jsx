@@ -1,4 +1,4 @@
-import "./CannaNews.css";
+import "./Cannanews.css";
 
 const articles = [
   {
