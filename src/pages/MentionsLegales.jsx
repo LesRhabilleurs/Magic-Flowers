@@ -18,27 +18,27 @@ export default function MentionsLegales() {
 
           <p>
             <strong>Nom de l'entreprise :</strong>{" "}
-            [Nom de l'entreprise / raison sociale]
+            Romero Swiss Botanics
           </p>
 
           <p>
             <strong>Adresse :</strong>{" "}
-            [Adresse]
+            Jura
           </p>
 
           <p>
             <strong>Code postal et ville :</strong>{" "}
-            [NPA] [Ville], Suisse
+            2822 Courroux, Suisse
           </p>
 
           <p>
             <strong>E-mail :</strong>{" "}
-            [adresse e-mail]
+            magic-botanics@hotmail.com
           </p>
 
           <p>
             <strong>Téléphone :</strong>{" "}
-            [numéro de téléphone]
+            +41796691453
           </p>
         </section>
 
@@ -51,7 +51,7 @@ export default function MentionsLegales() {
           </p>
 
           <p>
-            [Nom et prénom / nom de l'entreprise]
+            Romero Swiss Botanics
           </p>
         </section>
 
@@ -154,12 +154,12 @@ export default function MentionsLegales() {
 
           <p>
             <strong>E-mail :</strong>{" "}
-            [adresse e-mail]
+            magic-botanics@hotmail.com
           </p>
         </section>
 
         <p className="mentions-update">
-          Dernière mise à jour : [date]
+          Dernière mise à jour : 03/10/2026
         </p>
 
       </div>
