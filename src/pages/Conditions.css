@@ -1,0 +1,68 @@
+```css
+.conditions-page {
+  min-height: 80vh;
+  padding: 100px 20px 140px;
+  background: #ffffff;
+  color: #333;
+}
+
+.conditions-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.conditions-container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #6bd36b;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.conditions-container section {
+  margin-bottom: 40px;
+}
+
+.conditions-container h2 {
+  margin-bottom: 15px;
+  color: #6bd36b;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.conditions-container p {
+  margin: 0 0 15px;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.conditions-intro {
+  margin-bottom: 45px !important;
+  text-align: center;
+  font-size: 1.05rem !important;
+}
+
+.conditions-update {
+  margin-top: 60px !important;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #777 !important;
+  font-size: 0.9rem !important;
+}
+
+@media (max-width: 768px) {
+  .conditions-page {
+    padding: 60px 20px 100px;
+  }
+
+  .conditions-container h1 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+
+  .conditions-container h2 {
+    font-size: 1.25rem;
+  }
+}
+```
