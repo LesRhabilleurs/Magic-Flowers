@@ -22,7 +22,7 @@ export default function Footer() {
             <a href="#"><FaInstagram /></a>
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaTwitter /></a>
-          </div>
+          </div
         </div>
 
         {/* Navigation */}
