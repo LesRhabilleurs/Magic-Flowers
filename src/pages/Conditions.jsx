@@ -285,14 +285,14 @@ export default function Conditions() {
           </p>
 
           <p>
-            <strong>E-mail :</strong> [adresse e-mail]
+            <strong>E-mail :</strong> magic-botanics@hotmail.com
             <br />
-            <strong>Téléphone :</strong> [numéro de téléphone]
+            <strong>Téléphone :</strong> +41796691453
           </p>
         </section>
 
         <p className="conditions-update">
-          Dernière mise à jour : [date]
+          Dernière mise à jour : 03/10/2026
         </p>
       </div>
     </main>
