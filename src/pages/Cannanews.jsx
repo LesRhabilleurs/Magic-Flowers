@@ -1,5 +1,9 @@
 import "./Cannanews.css";
 
+import newsSuisse from "../assets/news-suisse.jpg";
+import newsCbd from "../assets/news-cbd.jpg";
+import newsActualite from "../assets/news-actualite.jpg";
+
 const articles = [
   {
     id: 1,
@@ -7,8 +11,9 @@ const articles = [
     date: "27 septembre 2026",
     title: "Le cannabis légal en Suisse : ce qu'il faut savoir",
     excerpt:
-      "Le marché suisse du cannabis et du CBD évolue. Découvrez les principales règles qui encadrent actuellement les produits à base de chanvre et de cannabis.",
+      "Le marché suisse du cannabis et du CBD évolue. Découvrez les principales règles qui encadrent actuellement les produits à base de chanvre et de CBD.",
     source: "Magic Flowers",
+    image: newsSuisse,
   },
   {
     id: 2,
@@ -18,15 +23,17 @@ const articles = [
     excerpt:
       "Huiles, fleurs, résines et autres produits à base de CBD : leurs caractéristiques et leur réglementation peuvent varier selon leur composition.",
     source: "Magic Flowers",
+    image: newsCbd,
   },
   {
     id: 3,
     category: "Actualité",
     date: "22 septembre 2026",
-    title: "Les nouveautés à suivre dans le monde du cannabis légal",
+    title: "Les nouveautés à suivre dans le monde du CBD",
     excerpt:
-      "Réglementation, nouveaux produits et évolution du marché : retrouvez prochainement dans CannaNews les principales actualités du secteur.",
+      "Réglementation, nouveaux produits et évolution du marché : retrouvez les principales actualités du secteur du CBD et du chanvre.",
     source: "Magic Flowers",
+    image: newsActualite,
   },
 ];
 
@@ -42,7 +49,8 @@ function CannaNews() {
         <h1>CannaNews</h1>
 
         <p>
-          Retrouvez les dernières actualités autour du CBD et du chanvre en Suisse.
+          Retrouvez les dernières actualités autour du CBD
+          et du chanvre en Suisse.
         </p>
       </header>
 
@@ -50,6 +58,15 @@ function CannaNews() {
       <div className="canna-news-list">
         {articles.map((article) => (
           <article className="news-card" key={article.id}>
+
+            {/* IMAGE */}
+            <div className="news-card-image">
+              <img
+                src={article.image}
+                alt={article.title}
+              />
+            </div>
+
             {/* CATÉGORIE + DATE */}
             <div className="news-card-top">
               <span className="news-category">
@@ -87,7 +104,8 @@ function CannaNews() {
         <h2>CannaNews</h2>
 
         <p>
-          Cette rubrique sera régulièrement mise à jour avec de nouevlles actualités autour du CBD chaque mois.
+          Cette rubrique sera régulièrement mise à jour avec de
+          nouvelles actualités autour du CBD chaque mois.
         </p>
       </section>
     </main>
