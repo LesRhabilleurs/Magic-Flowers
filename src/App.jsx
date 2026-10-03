@@ -8,6 +8,7 @@ import Faq from "./pages/FAQ";
 import Cannanews from "./pages/Cannanews";
 import Checkout from "./pages/Checkout";
 import Conditions from "./pages/Conditions";
+import MentionsLegales from "./pages/MentionsLegales";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -66,6 +67,12 @@ function App() {
           <Route
             path="/conditions"
             element={<Conditions />}
+          />
+
+          {/* Mentions Legales */}
+          <Route
+            path="/mentions-legales"
+            element={<MentionsLegales />}
           />
 
           {/* Commande */}
