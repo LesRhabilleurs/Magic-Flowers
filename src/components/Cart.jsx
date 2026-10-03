@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Cart.css";
 
 export default function Cart({ cart, setCart }) {
   const [open, setOpen] = useState(false);
+  const cartRef = useRef(null);
 
   const removeFromCart = (id) => {
-    const existingProduct = cart.find((item) => item.id === id);
+    const existingProduct = cart.find(
+      (item) => item.id === id
+    );
 
     if (!existingProduct) return;
 
@@ -21,13 +24,40 @@ export default function Cart({ cart, setCart }) {
         )
       );
     } else {
-      setCart(cart.filter((item) => item.id !== id));
+      setCart(
+        cart.filter((item) => item.id !== id)
+      );
     }
   };
 
+  // Ferme le panier si on clique ailleurs sur le site
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        cartRef.current &&
+        !cartRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener(
+      "mousedown",
+      handleClickOutside
+    );
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+    };
+  }, []);
+
   const total = cart
     .reduce(
-      (sum, item) => sum + item.price * item.quantity,
+      (sum, item) =>
+        sum + item.price * item.quantity,
       0
     )
     .toFixed(2);
@@ -38,13 +68,16 @@ export default function Cart({ cart, setCart }) {
   );
 
   return (
-    <div className="cart-container">
+    <div
+      className="cart-container"
+      ref={cartRef}
+    >
       {/* BOUTON PANIER */}
       <button
-  type="button"
-  className="cart-button"
-  onClick={() => setOpen(!open)}
->
+        type="button"
+        className="cart-button"
+        onClick={() => setOpen(!open)}
+      >
         🛒 {cartQuantity}
       </button>
 
@@ -85,7 +118,9 @@ export default function Cart({ cart, setCart }) {
 
               <button
                 type="button"
-                onClick={() => removeFromCart(item.id)}
+                onClick={() =>
+                  removeFromCart(item.id)
+                }
               >
                 ✕
               </button>
