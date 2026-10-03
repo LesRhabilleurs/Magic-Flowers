@@ -8,11 +8,14 @@ import "./Navbar.css";
 export default function Navbar({ cart, setCart }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
-
-      {/* Logo + Nom du site */}
-      <Link to="/" className="logo-link">
+      {/* Logo */}
+      <Link to="/" className="logo-link" onClick={closeMenu}>
         <div className="logo-container">
           <img
             src={logo}
@@ -24,77 +27,43 @@ export default function Navbar({ cart, setCart }) {
 
       {/* Liens de navigation */}
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-
-        <Link
-          to="/"
-          onClick={() => setMenuOpen(false)}
-        >
+        <Link to="/" onClick={closeMenu}>
           Accueil
         </Link>
 
-        <Link
-          to="/shop"
-          onClick={() => setMenuOpen(false)}
-        >
+        <Link to="/shop" onClick={closeMenu}>
           Boutique
         </Link>
 
-        <Link
-          to="/cannanews"
-          onClick={() => setMenuOpen(false)}
-        >
-          CannaNews
+        <Link to="/cannanews" onClick={closeMenu}>
+          Cannanews
         </Link>
 
-        <Link
-          to="/faq"
-          onClick={() => setMenuOpen(false)}
-        >
+        <Link to="/faq" onClick={closeMenu}>
           FAQ
         </Link>
 
-        <Link
-          to="/contact"
-          onClick={() => setMenuOpen(false)}
-        >
+        <Link to="/contact" onClick={closeMenu}>
           Contact
         </Link>
-
       </div>
 
       {/* Panier */}
-      <Cart
-        cart={cart}
-        setCart={setCart}
-      />
+      <Cart cart={cart} setCart={setCart} />
 
-      {/* Burger menu mobile */}
-      <div
+      {/* Menu burger */}
+      <button
+        type="button"
         className={`burger-menu ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Ouvrir le menu"
+        aria-expanded={menuOpen}
       >
         <span></span>
         <span></span>
         <span></span>
-      </div>
-
+      </button>
     </nav>
   );
 }
 ```
-
-Maintenant, **ne change rien d'autre**.
-
-Le lien du menu **CannaNews** pointe bien vers :
-
-```text
-/cannanews
-```
-
-et ta route `App.jsx` doit également être :
-
-```jsx
-<Route path="/cannanews" element={<CannaNews />} />
-```
-
-Si tu veux, ensuite je peux te refaire **`Cannanews.jsx` + `Cannanews.css` ensemble**, avec les 3 articles correctement affichés et une mise en page propre.
