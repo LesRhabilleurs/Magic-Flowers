@@ -9,7 +9,7 @@ const articles = [
     excerpt:
       "Le marché suisse du cannabis et du CBD évolue. Découvrez les principales règles qui encadrent actuellement les produits à base de chanvre et de CBD.",
     source: "Juriup.ch",
-    image: /news3.jpg
+    image: "/news3.jpg"
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const articles = [
     excerpt:
       "Huiles, fleurs, résines et autres produits à base de CBD : leurs caractéristiques et leur réglementation peuvent varier selon leur composition.",
     source: "Magic Botanics",
-    image: /news2.jpg
+    image: "/news2.jpg"
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const articles = [
     excerpt:
       "Réglementation, nouveaux produits et évolution du marché : retrouvez les principales actualités du secteur du CBD et du chanvre.",
     source: "Magic Botanics",
-    image: /news1.jpg
+    image: "/news1.jpg"
   },
 ];
 
