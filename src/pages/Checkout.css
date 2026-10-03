@@ -1,12 +1,11 @@
-/* PAGE CHECKOUT */
 .checkout-page {
   min-height: 80vh;
   padding: 60px 20px;
   background: #f5f7f5;
   color: #222;
+  font-family: inherit;
 }
 
-/* CONTENEUR PRINCIPAL */
 .checkout-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -17,16 +16,10 @@
   margin-bottom: 40px;
   color: #1f8f4d;
   font-size: 2.2rem;
+  font-family: inherit;
+  font-weight: 700;
 }
 
-/* COLONNES */
-.checkout-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-/* BLOCS */
 .checkout-summary,
 .checkout-form-section {
   background: #ffffff;
@@ -36,14 +29,23 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 .checkout-summary h2,
 .checkout-form-section h2 {
   margin-top: 0;
   margin-bottom: 25px;
   color: #1f8f4d;
+  font-family: inherit;
+  font-weight: 700;
 }
 
-/* PRODUITS */
+/* Produits */
+
 .checkout-product {
   display: flex;
   align-items: center;
@@ -66,7 +68,9 @@
 .checkout-product-info h3 {
   margin: 0 0 5px;
   color: #222;
+  font-family: inherit;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .checkout-product-info p {
@@ -85,41 +89,60 @@
   margin-bottom: 10px;
 }
 
-/* QUANTITÉS */
+/* Boutons + et - */
+
 .quantity-controls {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 10px;
 }
 
 .quantity-controls button {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: none;
   border-radius: 6px;
   background: #2ecc71;
   color: #111;
+
+  font-family: inherit;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 1;
+
   cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .quantity-controls button:hover {
   background: #27ae60;
+  transform: scale(1.05);
 }
 
 .quantity-controls span {
   min-width: 20px;
   text-align: center;
   color: #222;
+  font-family: inherit;
   font-weight: bold;
+  line-height: 30px;
 }
 
-/* SUPPRIMER */
+/* Supprimer */
+
 .remove-product {
   border: none;
   background: transparent;
   color: #e53935;
   cursor: pointer;
+  font-family: inherit;
   font-size: 0.8rem;
 }
 
@@ -127,15 +150,20 @@
   color: #b71c1c;
 }
 
-/* TOTAL */
+/* Total */
+
 .checkout-total {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-top: 25px;
   padding-top: 20px;
+
   border-top: 2px solid #2ecc71;
+
   color: #222;
+  font-family: inherit;
   font-size: 1.2rem;
 }
 
@@ -144,7 +172,8 @@
   font-size: 1.4rem;
 }
 
-/* FORMULAIRE */
+/* Formulaire */
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -160,6 +189,7 @@
 .form-group label {
   margin-bottom: 7px;
   color: #222;
+  font-family: inherit;
   font-weight: bold;
 }
 
@@ -167,9 +197,13 @@
   padding: 12px;
   border: 1px solid #cccccc;
   border-radius: 8px;
+
   background: #ffffff;
   color: #222;
+
+  font-family: inherit;
   font-size: 1rem;
+
   outline: none;
 }
 
@@ -182,17 +216,23 @@
   box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15);
 }
 
-/* BOUTON COMMANDER */
+/* Bouton commande */
+
 .place-order-btn {
   width: 100%;
   margin-top: 10px;
   padding: 14px;
+
   border: none;
   border-radius: 8px;
+
   background: #2ecc71;
   color: #111;
+
+  font-family: inherit;
   font-size: 1rem;
   font-weight: bold;
+
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -202,34 +242,44 @@
   transform: translateY(-2px);
 }
 
-/* PANIER VIDE */
+/* Panier vide */
+
 .checkout-empty {
   max-width: 600px;
   margin: 80px auto;
   padding: 40px;
+
   text-align: center;
+
   background: #ffffff;
   border: 1px solid #d9e5dc;
   border-radius: 14px;
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .checkout-empty h1 {
   color: #1f8f4d;
+  font-family: inherit;
 }
 
 .checkout-empty p {
   margin: 20px 0;
   color: #333;
+  font-family: inherit;
 }
 
 .checkout-back {
   display: inline-block;
   padding: 12px 20px;
+
   background: #2ecc71;
   color: #111;
+
   text-decoration: none;
   border-radius: 8px;
+
+  font-family: inherit;
   font-weight: bold;
 }
 
@@ -237,7 +287,8 @@
   background: #27ae60;
 }
 
-/* MOBILE */
+/* Responsive */
+
 @media (max-width: 800px) {
   .checkout-content {
     grid-template-columns: 1fr;
