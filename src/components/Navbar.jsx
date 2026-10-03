@@ -1,4 +1,3 @@
-```jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
@@ -14,7 +13,6 @@ export default function Navbar({ cart, setCart }) {
 
   return (
     <nav className="navbar">
-      {/* Logo */}
       <Link to="/" className="logo-link" onClick={closeMenu}>
         <div className="logo-container">
           <img
@@ -25,7 +23,6 @@ export default function Navbar({ cart, setCart }) {
         </div>
       </Link>
 
-      {/* Liens de navigation */}
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         <Link to="/" onClick={closeMenu}>
           Accueil
@@ -36,7 +33,7 @@ export default function Navbar({ cart, setCart }) {
         </Link>
 
         <Link to="/cannanews" onClick={closeMenu}>
-          Cannanews
+          CannaNews
         </Link>
 
         <Link to="/faq" onClick={closeMenu}>
@@ -48,10 +45,8 @@ export default function Navbar({ cart, setCart }) {
         </Link>
       </div>
 
-      {/* Panier */}
       <Cart cart={cart} setCart={setCart} />
 
-      {/* Menu burger */}
       <button
         type="button"
         className={`burger-menu ${menuOpen ? "open" : ""}`}
@@ -66,4 +61,3 @@ export default function Navbar({ cart, setCart }) {
     </nav>
   );
 }
-```
