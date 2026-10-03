@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Cart.css";
 
 export default function Cart({ cart, setCart }) {
@@ -100,12 +101,12 @@ export default function Cart({ cart, setCart }) {
               Total : CHF {total}
             </p>
 
-            <button
-              type="button"
+            <Link
+              to="/checkout"
               className="checkout-btn"
             >
               Commander
-            </button>
+            </Link>
           </>
         )}
       </div>
