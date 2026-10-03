@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Faq from "./pages/FAQ";
-import News from "./pages/Cannanews";
+import Cannanews from "./pages/Cannanews";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -53,7 +53,7 @@ function App() {
           {/* CannaNews */}
           <Route
             path="/cannanews"
-            element={<CannaNews />}
+            element={<Cannanews />}
           />
         </Routes>
 
