@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Faq from "./pages/FAQ";
 import Cannanews from "./pages/Cannanews";
+import Checkout from "./pages/Checkout";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -24,8 +25,12 @@ function App() {
         <Navbar cart={cart} setCart={setCart} />
 
         <Routes>
+
           {/* Accueil */}
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={<Home />}
+          />
 
           {/* Boutique */}
           <Route
@@ -55,6 +60,18 @@ function App() {
             path="/cannanews"
             element={<Cannanews />}
           />
+
+          {/* Commande */}
+          <Route
+            path="/checkout"
+            element={
+              <Checkout
+                cart={cart}
+                setCart={setCart}
+              />
+            }
+          />
+
         </Routes>
 
         {/* Footer visible sur toutes les pages */}
