@@ -1,4 +1,3 @@
-```jsx
 import "./Conditions.css";
 
 export default function Conditions() {
@@ -299,4 +298,3 @@ export default function Conditions() {
     </main>
   );
 }
-```
