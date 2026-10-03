@@ -3,7 +3,6 @@
   padding: 60px 20px;
   background: #f5f7f5;
   color: #222;
-  font-family: inherit;
 }
 
 .checkout-container {
@@ -13,11 +12,16 @@
 
 .checkout-container > h1 {
   text-align: center;
-  margin-bottom: 40px;
-  color: #1f8f4d;
-  font-size: 2.2rem;
-  font-family: inherit;
+  margin-bottom: 50px;
+  color: #6bd36b;
+  font-size: 2.5rem;
   font-weight: 700;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .checkout-summary,
@@ -29,18 +33,11 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-.checkout-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
 .checkout-summary h2,
 .checkout-form-section h2 {
   margin-top: 0;
   margin-bottom: 25px;
-  color: #1f8f4d;
-  font-family: inherit;
+  color: #6bd36b;
   font-weight: 700;
 }
 
@@ -68,14 +65,13 @@
 .checkout-product-info h3 {
   margin: 0 0 5px;
   color: #222;
-  font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .checkout-product-info p {
   margin: 0 0 10px;
-  color: #1f8f4d;
+  color: #6bd36b;
   font-weight: bold;
 }
 
@@ -94,7 +90,6 @@
 .quantity-controls {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 10px;
 }
 
@@ -109,28 +104,32 @@
 
   border: none;
   border-radius: 6px;
-  background: #2ecc71;
+
+  background: #6bd36b;
   color: #111;
 
-  font-family: inherit;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
 
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .quantity-controls button:hover {
-  background: #27ae60;
+  background: #5bc65b;
   transform: scale(1.05);
 }
 
 .quantity-controls span {
   min-width: 20px;
+
   text-align: center;
+
   color: #222;
-  font-family: inherit;
   font-weight: bold;
   line-height: 30px;
 }
@@ -140,9 +139,11 @@
 .remove-product {
   border: none;
   background: transparent;
+
   color: #e53935;
+
   cursor: pointer;
-  font-family: inherit;
+
   font-size: 0.8rem;
 }
 
@@ -160,15 +161,14 @@
   margin-top: 25px;
   padding-top: 20px;
 
-  border-top: 2px solid #2ecc71;
+  border-top: 2px solid #6bd36b;
 
   color: #222;
-  font-family: inherit;
   font-size: 1.2rem;
 }
 
 .checkout-total strong {
-  color: #1f8f4d;
+  color: #6bd36b;
   font-size: 1.4rem;
 }
 
@@ -189,19 +189,18 @@
 .form-group label {
   margin-bottom: 7px;
   color: #222;
-  font-family: inherit;
   font-weight: bold;
 }
 
 .form-group input {
   padding: 12px;
+
   border: 1px solid #cccccc;
   border-radius: 8px;
 
   background: #ffffff;
   color: #222;
 
-  font-family: inherit;
   font-size: 1rem;
 
   outline: none;
@@ -212,8 +211,8 @@
 }
 
 .form-group input:focus {
-  border-color: #2ecc71;
-  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15);
+  border-color: #6bd36b;
+  box-shadow: 0 0 0 3px rgba(107, 211, 107, 0.15);
 }
 
 /* Bouton commande */
@@ -226,19 +225,21 @@
   border: none;
   border-radius: 8px;
 
-  background: #2ecc71;
+  background: #6bd36b;
   color: #111;
 
-  font-family: inherit;
   font-size: 1rem;
   font-weight: bold;
 
   cursor: pointer;
-  transition: all 0.2s ease;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .place-order-btn:hover {
-  background: #27ae60;
+  background: #5bc65b;
   transform: translateY(-2px);
 }
 
@@ -259,32 +260,30 @@
 }
 
 .checkout-empty h1 {
-  color: #1f8f4d;
-  font-family: inherit;
+  color: #6bd36b;
 }
 
 .checkout-empty p {
   margin: 20px 0;
   color: #333;
-  font-family: inherit;
 }
 
 .checkout-back {
   display: inline-block;
+
   padding: 12px 20px;
 
-  background: #2ecc71;
+  background: #6bd36b;
   color: #111;
 
   text-decoration: none;
   border-radius: 8px;
 
-  font-family: inherit;
   font-weight: bold;
 }
 
 .checkout-back:hover {
-  background: #27ae60;
+  background: #5bc65b;
 }
 
 /* Responsive */
