@@ -87,8 +87,7 @@ function CannaNews() {
         <h2>CannaNews</h2>
 
         <p>
-          Cette rubrique sera régulièrement mise à jour avec les
-          actualités du cannabis légal, du CBD et du chanvre.
+          Cette rubrique sera régulièrement mise à jour avec de nouevlles actualités autour du CBD chaque mois.
         </p>
       </section>
     </main>
