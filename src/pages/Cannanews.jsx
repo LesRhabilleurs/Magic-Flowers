@@ -33,7 +33,6 @@ const articles = [
 function CannaNews() {
   return (
     <main className="canna-news">
-
       {/* HEADER */}
       <header className="canna-news-header">
         <span className="canna-news-label">
@@ -48,17 +47,12 @@ function CannaNews() {
         </p>
       </header>
 
-      {/* NEWS */}
-      <section className="canna-news-grid">
-
+      {/* LISTE DES ACTUALITÉS */}
+      <div className="canna-news-list">
         {articles.map((article) => (
-          <article
-            className="news-card"
-            key={article.id}
-          >
-            {/* HAUT DE LA CARTE */}
+          <article className="news-card" key={article.id}>
+            {/* CATÉGORIE + DATE */}
             <div className="news-card-top">
-
               <span className="news-category">
                 {article.category}
               </span>
@@ -66,53 +60,38 @@ function CannaNews() {
               <span className="news-date">
                 {article.date}
               </span>
-
             </div>
 
             {/* CONTENU */}
             <div className="news-card-content">
+              <h2>{article.title}</h2>
 
-              <h2>
-                {article.title}
-              </h2>
+              <p>{article.excerpt}</p>
 
-              <p>
-                {article.excerpt}
-              </p>
-
-              {/* BAS DE LA CARTE */}
+              {/* FOOTER */}
               <div className="news-card-footer">
-
                 <span className="news-source">
                   Source : {article.source}
                 </span>
 
-                <a href="#">
+                <a href="#news">
                   Lire la suite →
                 </a>
-
               </div>
-
             </div>
           </article>
         ))}
-
-      </section>
+      </div>
 
       {/* INFORMATIONS */}
       <section className="canna-news-info">
-
-        <h2>
-          CannaNews
-        </h2>
+        <h2>CannaNews</h2>
 
         <p>
-          Cette rubrique sera régulièrement mise à jour avec
-          les actualités du cannabis légal, du CBD et du chanvre.
+          Cette rubrique sera régulièrement mise à jour avec les
+          actualités du cannabis légal, du CBD et du chanvre.
         </p>
-
       </section>
-
     </main>
   );
 }
