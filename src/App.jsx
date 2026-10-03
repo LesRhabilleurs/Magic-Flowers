@@ -7,6 +7,7 @@ import Shop from "./pages/Shop";
 import Faq from "./pages/FAQ";
 import Cannanews from "./pages/Cannanews";
 import Checkout from "./pages/Checkout";
+import Conditions from "./pages/Conditions";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -59,6 +60,12 @@ function App() {
           <Route
             path="/cannanews"
             element={<Cannanews />}
+          />
+
+          {/* Conditions */}
+          <Route
+            path="/conditions"
+            element={<Conditions />}
           />
 
           {/* Commande */}
