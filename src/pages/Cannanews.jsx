@@ -42,8 +42,7 @@ function CannaNews() {
         <h1>CannaNews</h1>
 
         <p>
-          Retrouvez les dernières actualités autour du cannabis légal,
-          du CBD et du chanvre en Suisse.
+          Retrouvez les dernières actualités autour du CBD et du chanvre en Suisse.
         </p>
       </header>
 
