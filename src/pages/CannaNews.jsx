@@ -118,7 +118,3 @@ function CannaNews() {
 }
 
 export default CannaNews;
-  );
-}
-
-export default CannaNews;
