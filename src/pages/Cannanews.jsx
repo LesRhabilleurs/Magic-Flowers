@@ -1,9 +1,5 @@
 import "./Cannanews.css";
 
-import newsSuisse from "../assets/news-suisse.jpg";
-import newsCbd from "../assets/news-cbd.jpg";
-import newsActualite from "../assets/news-actualite.jpg";
-
 const articles = [
   {
     id: 1,
@@ -12,8 +8,8 @@ const articles = [
     title: "Le cannabis légal en Suisse : ce qu'il faut savoir",
     excerpt:
       "Le marché suisse du cannabis et du CBD évolue. Découvrez les principales règles qui encadrent actuellement les produits à base de chanvre et de CBD.",
-    source: "Magic Flowers",
-    image: newsSuisse,
+    source: "Magic Botanics",
+    image: /news3.jpg
   },
   {
     id: 2,
@@ -22,8 +18,8 @@ const articles = [
     title: "CBD : quelles différences entre les produits ?",
     excerpt:
       "Huiles, fleurs, résines et autres produits à base de CBD : leurs caractéristiques et leur réglementation peuvent varier selon leur composition.",
-    source: "Magic Flowers",
-    image: newsCbd,
+    source: "Magic Botanics",
+    image: /news2.jpg
   },
   {
     id: 3,
@@ -32,8 +28,8 @@ const articles = [
     title: "Les nouveautés à suivre dans le monde du CBD",
     excerpt:
       "Réglementation, nouveaux produits et évolution du marché : retrouvez les principales actualités du secteur du CBD et du chanvre.",
-    source: "Magic Flowers",
-    image: newsActualite,
+    source: "Magic Botanics",
+    image: /news1.jpg
   },
 ];
 
