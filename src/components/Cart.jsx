@@ -41,9 +41,10 @@ export default function Cart({ cart, setCart }) {
     <div className="cart-container">
       {/* BOUTON PANIER */}
       <button
-        type="button"
-        onClick={() => setOpen(!open)}
-      >
+  type="button"
+  className="cart-button"
+  onClick={() => setOpen(!open)}
+>
         🛒 {cartQuantity}
       </button>
 
