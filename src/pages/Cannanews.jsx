@@ -4,11 +4,11 @@ const articles = [
   {
     id: 1,
     category: "Suisse",
-    date: "27 septembre 2026",
+    date: "05 avril 2026",
     title: "Le cannabis légal en Suisse : ce qu'il faut savoir",
     excerpt:
       "Le marché suisse du cannabis et du CBD évolue. Découvrez les principales règles qui encadrent actuellement les produits à base de chanvre et de CBD.",
-    source: "Magic Botanics",
+    source: "Juriup.ch",
     image: /news3.jpg
   },
   {
