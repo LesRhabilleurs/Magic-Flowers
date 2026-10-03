@@ -1,4 +1,3 @@
-```jsx
 import { useState } from "react";
 import "./Cannanews.css";
 
@@ -135,38 +134,3 @@ function CannaNews() {
 }
 
 export default CannaNews;
-```
-
-### Ce qui change
-
-Il y a seulement trois choses importantes :
-
-**1.** On importe `useState` :
-
-```jsx
-import { useState } from "react";
-```
-
-**2.** Chaque article possède maintenant un `content` :
-
-```jsx
-content: "Le marché suisse du cannabis et du CBD évolue..."
-```
-
-**3.** Le lien est remplacé par un bouton qui ouvre/ferme le contenu :
-
-```jsx
-<button
-  type="button"
-  onClick={() => handleReadMore(article.id)}
->
-  {openArticle === article.id
-    ? "Réduire ↑"
-    : "Lire la suite →"}
-</button>
-```
-
-Tu peux donc **remplacer directement ton `Cannanews.jsx` actuel par celui-ci**.
-
-Si le bouton apparaît mais qu'il est moche par rapport au design actuel, il faudra ensuite simplement ajouter **3-4 lignes dans `Cannanews.css`** pour lui donner exactement le même style que ton ancien « Lire la suite → ».
-
