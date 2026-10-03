@@ -4,10 +4,10 @@ export default function Conditions() {
   return (
     <main className="conditions-page">
       <div className="conditions-container">
-        <h1>Conditions générales</h1>
+        <h1>Conditions générales de vente</h1>
 
         <p className="conditions-intro">
-          Les présentes conditions générales régissent l'utilisation du
+          Les présentes conditions générales de vente (CGV) régissent l'utilisation du
           site Magic Botanics ainsi que les ventes effectuées par
           l'intermédiaire de celui-ci.
         </p>
@@ -20,15 +20,15 @@ export default function Conditions() {
           </p>
 
           <p>
-            <strong>[Nom de l'entreprise / raison sociale]</strong>
+            <strong>Romero Swiss Botanics</strong>
             <br />
-            [Adresse]
+            Suisse
             <br />
-            [NPA] [Ville], Suisse
+            2822 Courroux, Jura
             <br />
-            E-mail : [adresse e-mail]
+            E-mail : magic-botanics@hotmail.com
             <br />
-            Téléphone : [numéro de téléphone]
+            Téléphone : +41796691453
           </p>
         </section>
 
