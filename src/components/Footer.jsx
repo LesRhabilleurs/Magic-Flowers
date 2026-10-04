@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="footer-column">
           <h4>Légal</h4>
           <a href="/mentions-legales">Mentions légales</a>
-          <a href="/confidentialite">Confidentialité</a>
+          <a href="/confidentialite">Politique de confidentialité</a>
           <a href="/conditions">Conditions générales de vente (CGV)</a>
         </div>
 
