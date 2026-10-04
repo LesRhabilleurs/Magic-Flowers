@@ -9,6 +9,7 @@ import Cannanews from "./pages/Cannanews";
 import Checkout from "./pages/Checkout";
 import Conditions from "./pages/Conditions";
 import MentionsLegales from "./pages/MentionsLegales";
+import Confidentialite from "./pages/Confidentialite";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -73,6 +74,12 @@ function App() {
           <Route
             path="/mentions-legales"
             element={<MentionsLegales />}
+          />
+
+          {/* Confidentialité */}
+          <Route
+            path="/confidentialite"
+            element={<Confidentialite />}
           />
 
           {/* Commande */}
