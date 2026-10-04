@@ -3,6 +3,19 @@ import "./Cannanews.css";
 
 const articles = [
   {
+    id: 3,
+    category: "Actualité",
+    date: "07 juin 2026",
+    title: "Les nouveautés à suivre dans le monde du CBD",
+    excerpt:
+      "Réglementation, nouveaux produits et évolution du marché : retrouvez les principales actualités du secteur du CBD et du chanvre.",
+    content:
+      "Le marché européen du CBD vient de franchir une étape importante. Pour la première fois, l’Autorité européenne de sécurité des aliments (EFSA) a rendu un avis favorable sur la sécurité d’un produit alimentaire à base de cannabidiol. Une avancée qui pourrait changer la donne pour l’industrie, mais qui reste très éloignée d’une légalisation générale des aliments au CBD. Le CBD européen est-il enfin en train de sortir du flou réglementaire ? Un nouvel avis scientifique publié en septembre par l’EFSA pourrait le laisser penser. Le 18 septembre 2026, l'autorité européenne a publié une évaluation consacrée à un cannabidiol obtenu par synthèse chimique et destiné à être utilisé comme « novel food ». Le produit évalué contient au moins 98 % de CBD et doit être commercialisé sous forme dissoute dans une huile MCT. La demande prévoit une dose quotidienne maximale de 2 mg. Cette décision constitue une première étape importante pour une industrie qui évolue depuis plusieurs années dans un environnement réglementaire particulièrement complexe.",
+    source: "Magic Botanics",
+    image: "/news3.jpg",
+  },
+  
+  {
     id: 2,
     category: "CBD",
     date: "03 mai 2026",
@@ -28,18 +41,6 @@ const articles = [
     image: "/news1.jpg",
   },
   
-  {
-    id: 3,
-    category: "Actualité",
-    date: "22 septembre 2026",
-    title: "Les nouveautés à suivre dans le monde du CBD",
-    excerpt:
-      "Réglementation, nouveaux produits et évolution du marché : retrouvez les principales actualités du secteur du CBD et du chanvre.",
-    content:
-      "Le secteur du CBD et du chanvre continue d'évoluer. Les changements réglementaires, l'arrivée de nouveaux produits et l'évolution des habitudes des consommateurs font partie des principaux sujets à suivre. CannaNews vous propose de retrouver régulièrement les actualités importantes du secteur en Suisse.",
-    source: "Magic Botanics",
-    image: "/news3.jpg",
-  },
 ];
 
 function CannaNews() {
