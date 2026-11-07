@@ -3,6 +3,19 @@ import "./Cannanews.css";
 
 const articles = [
   {
+    id: 4,
+    category: "Actualité",
+    date: "05 juillet 2026",
+    title: "La démocratisation du CBD dans les magasins Landi en Suisse",
+    excerpt:
+      "Réglementation, nouveaux produits et évolution du marché : retrouvez les principales actualités du secteur du CBD et du chanvre.",
+    content:
+      "En Suisse, les magasins Landi commercialisent des plants de chanvre CBD depuis 2022. Ces plants contiennent entre 0,4 et 0,7 % de THC, soit moins que la limite légale suisse de 1 %. Cette commercialisation témoigne de l'intérêt croissant des consommateurs pour le CBD et de sa démocratisation dans le commerce traditionnel.",
+    source: "Watson",
+    image: "/news4.jpg",
+  },
+ 
+  {
     id: 3,
     category: "Actualité",
     date: "07 juin 2026",
