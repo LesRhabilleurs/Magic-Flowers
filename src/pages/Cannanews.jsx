@@ -3,6 +3,18 @@ import "./Cannanews.css";
 
 const articles = [
   {
+    id: 6,
+    category: "Europe",
+    date: "06 septembre 2026",
+    title: "Le cannabidiol synthétique : une avancée prometteuse pour le marché européen des compléments alimentaires",
+    excerpt:
+      "Une nouvelle étape réglementaire qui pourrait ouvrir la voie à une meilleure intégration du cannabidiol dans les compléments alimentaires en Europe.",
+    content:
+      "En septembre 2026, l'Autorité européenne de sécurité des aliments (EFSA) a publié une évaluation scientifique favorable concernant un CBD synthétique destiné à être utilisé dans des compléments alimentaires. Selon ses conclusions, ce produit, présentant une pureté d'au moins 98 %, pourrait être consommé à une dose maximale de 2 mg par jour chez les adultes de plus de 25 ans, sous certaines conditions. Cette évaluation constitue une avancée importante pour le secteur du cannabidiol, puisqu'elle apporte de nouvelles indications sur la sécurité de certains produits à base de CBD. Toutefois, plusieurs précautions restent nécessaires : la sécurité n'a pas pu être établie pour les personnes sous traitement médicamenteux, les femmes enceintes ou allaitantes, ainsi que les personnes de moins de 25 ans. Cette décision ne concerne pas l'ensemble des produits CBD et ne constitue pas encore une autorisation générale de commercialisation dans l'Union européenne. Elle représente néanmoins une étape supplémentaire vers un encadrement plus précis du cannabidiol et pourrait contribuer à faire évoluer le marché des compléments alimentaires à base de CBD.",
+    source: "EFSA",
+    image: "/news6.jpg",
+  },
+  {
     id: 5,
     category: "Inde",
     date: "02 aout 2026",
