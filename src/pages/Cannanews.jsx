@@ -3,6 +3,18 @@ import "./Cannanews.css";
 
 const articles = [
   {
+    id: 5,
+    category: "Inde",
+    date: "02 aout 2026",
+    title: "Le CBD franchit une nouvelle étape dans le domaine médical en Inde",
+    excerpt:
+      "Une avancée prometteuse qui renforce la place du cannabidiol dans la recherche pharmaceutique et le traitement des troubles anxieux.",
+    content:
+      "En août 2026, l'Inde a autorisé un médicament à base de cannabidiol (CBD) synthétique destiné à accompagner le traitement des troubles anxieux légers à modérés. Développé par Leiutis Pharmaceuticals, ce médicament se présente sous forme de solution orale et doit être utilisé en complément d'une thérapie cognitivo-comportementale (TCC), sous prescription d'un psychiatre. Cette autorisation marque une avancée intéressante pour le secteur du CBD, qui cherche progressivement à renforcer sa place dans le domaine pharmaceutique. Elle témoigne de l'intérêt croissant de la recherche médicale pour les applications thérapeutiques du cannabidiol. Toutefois, cette évolution ne signifie pas que tous les produits à base de CBD ont une efficacité médicale démontrée. Des études complémentaires restent nécessaires afin d'évaluer leur efficacité et leur sécurité à long terme.",
+    source: "Magic Botanics",
+    image: "/news5.jpg",
+  },
+  {
     id: 4,
     category: "Suisse",
     date: "05 juillet 2026",
