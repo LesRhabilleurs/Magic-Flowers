@@ -3,6 +3,18 @@ import "./Cannanews.css";
 
 const articles = [
   {
+    id: 7,
+    category: "Royaume-Uni",
+    date: "04 octobre 2026",
+    title: "le Royaume-Uni prépare les premières autorisations alimentaires de produits à base de cannabidiol",
+    excerpt:
+      "Vers une meilleure reconnaissance du cannabidiol au Royaume-Uni grâce à un encadrement plus strict et à de nouvelles perspectives de commercialisation.",
+    content:
+      "En octobre 2026, la Food Standards Agency (FSA), l'agence britannique chargée de la sécurité alimentaire, a franchi une étape importante vers la régularisation du marché des produits alimentaires à base de cannabidiol. L'agence a recommandé aux ministres d'autoriser trois premiers dossiers de produits CBD destinés à être commercialisés comme nouveaux aliments. Ces produits présentent une pureté d'au moins 98 % et ont fait l'objet d'évaluations scientifiques favorables.",
+    source: "Food Standards Agency",
+    image: "/news7.jpg",
+  },
+  {
     id: 6,
     category: "Europe",
     date: "06 septembre 2026",
