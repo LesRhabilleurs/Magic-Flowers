@@ -111,7 +111,7 @@ function CannaNews() {
 
         <p>
           Retrouvez les dernières actualités autour du CBD
-          et du chanvre en Suisse.
+          et du chanvre en Suisse et dans le reste du monde.
         </p>
       </header>
 
